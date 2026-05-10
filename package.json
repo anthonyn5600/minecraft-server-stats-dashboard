@@ -1,0 +1,15 @@
+{
+  "name": "minecraft-server-stats-dashboard",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build:stats": "node scripts/build-stats-data.mjs",
+    "build:storage": "node scripts/build-pokemon-storage.mjs",
+    "fetch:icons": "node scripts/fetch-pokemon-icons.mjs",
+    "serve": "node scripts/serve.mjs"
+  },
+  "dependencies": {
+    "prismarine-nbt": "2.8.0"
+  }
+}

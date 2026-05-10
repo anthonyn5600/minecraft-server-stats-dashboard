@@ -34,6 +34,12 @@ const colors = ["#76d06b", "#69c9d1", "#e2b84e", "#e46f64", "#9da3ad"];
 let currentMetric = "blocksMined";
 let currentPlayer = "";
 let summary;
+let storageSummary;
+let iconManifest = {};
+let storagePlayer = "";
+let storageView = "all";
+let storageSort = "level";
+let storageSearch = "";
 
 const formatNumber = (value, suffix = "") => {
   const formatted = Number(value).toLocaleString(undefined, {
@@ -48,6 +54,15 @@ const getMetric = (player, key) => {
 };
 
 const avatarText = (name) => name.slice(0, 1).toUpperCase();
+const titleCase = (value = "") =>
+  value
+    .split(" ")
+    .filter(Boolean)
+    .map((part) => part.charAt(0).toUpperCase() + part.slice(1))
+    .join(" ");
+
+const prettyMove = (value = "") => titleCase(value.replace(/([a-z])([A-Z])/g, "$1 $2"));
+const pokemonIcon = (mon) => iconManifest[mon.species] || "assets/cobblemon/caught_icon.png";
 
 const renderAggregate = () => {
   document.querySelector("#player-count").textContent = summary.players.length;
@@ -178,15 +193,171 @@ const renderItemList = (selector, items) => {
     .join("");
 };
 
-fetch("data/stats-summary.json")
-  .then((response) => response.json())
-  .then((data) => {
-    summary = data;
-    currentPlayer = summary.players[0].uuid;
-    renderAggregate();
-    renderChampion();
-    renderTabs();
-    renderPlayerSelect();
-    renderChart();
-    renderSelectedPlayer();
+const renderStorageTotals = () => {
+  document.querySelector("#storage-totals").innerHTML = `
+    <span><strong>${formatNumber(storageSummary.totals.total)}</strong> total</span>
+    <span><strong>${formatNumber(storageSummary.totals.pc)}</strong> PC</span>
+    <span><strong>${formatNumber(storageSummary.totals.party)}</strong> party</span>
+    <span><strong>${formatNumber(storageSummary.totals.shiny)}</strong> shiny</span>
+  `;
+};
+
+const renderStoragePlayerSelect = () => {
+  const select = document.querySelector("#storage-player-select");
+  select.innerHTML = storageSummary.players
+    .map((player) => `<option value="${player.uuid}">${player.name}</option>`)
+    .join("");
+  select.value = storagePlayer;
+  select.addEventListener("change", () => {
+    storagePlayer = select.value;
+    renderStorage();
   });
+};
+
+const renderStorageControls = () => {
+  document.querySelectorAll("[data-storage-view]").forEach((button) => {
+    button.addEventListener("click", () => {
+      storageView = button.dataset.storageView;
+      document.querySelectorAll("[data-storage-view]").forEach((item) => {
+        item.classList.toggle("active", item.dataset.storageView === storageView);
+      });
+      renderStorage();
+    });
+  });
+
+  document.querySelector("#storage-sort").addEventListener("change", (event) => {
+    storageSort = event.target.value;
+    renderStorage();
+  });
+
+  document.querySelector("#storage-search").addEventListener("input", (event) => {
+    storageSearch = event.target.value.trim().toLowerCase();
+    renderStorage();
+  });
+};
+
+const currentStoragePlayer = () => storageSummary.players.find((player) => player.uuid === storagePlayer) || storageSummary.players[0];
+
+const storageCollection = (player) => {
+  const withSource = [
+    ...player.party.map((mon) => ({ ...mon, source: "party" })),
+    ...player.pc.map((mon) => ({ ...mon, source: "pc" })),
+  ];
+
+  return withSource
+    .filter((mon) => {
+      if (storageView === "party") return mon.source === "party";
+      if (storageView === "pc") return mon.source === "pc";
+      if (storageView === "shiny") return mon.shiny;
+      return true;
+    })
+    .filter((mon) => {
+      if (!storageSearch) return true;
+      const haystack = [
+        mon.species,
+        mon.ability,
+        mon.nature,
+        mon.teraType,
+        mon.caughtBall,
+        mon.heldItem,
+        ...(mon.moves || []),
+      ]
+        .join(" ")
+        .toLowerCase();
+      return haystack.includes(storageSearch);
+    })
+    .sort((a, b) => {
+      if (storageSort === "species") return a.species.localeCompare(b.species);
+      if (storageSort === "ivTotal") return b.ivTotal - a.ivTotal || b.level - a.level;
+      if (storageSort === "box") return (a.source === "party" ? -1 : a.box) - (b.source === "party" ? -1 : b.box) || a.slot - b.slot;
+      return b.level - a.level || b.ivTotal - a.ivTotal;
+    });
+};
+
+const renderStorageFeatures = (player) => {
+  const topLevel = player.highestLevel[0];
+  const bestIv = player.bestIvs[0];
+  const shiny = player.shinies[0];
+
+  document.querySelector("#storage-feature-grid").innerHTML = [
+    ["Collection", `${player.counts.total}`, `${player.counts.pc} PC + ${player.counts.party} party`],
+    ["Shinies", `${player.counts.shiny}`, shiny ? `${titleCase(shiny.species)} L${shiny.level}` : "No shinies found"],
+    ["Highest level", topLevel ? `L${topLevel.level}` : "0", topLevel ? titleCase(topLevel.species) : "No Pokemon"],
+    ["Best IV total", bestIv ? `${bestIv.ivTotal}/186` : "0/186", bestIv ? titleCase(bestIv.species) : "No Pokemon"],
+  ]
+    .map(
+      ([label, value, detail]) => `
+        <article>
+          <span>${label}</span>
+          <strong>${value}</strong>
+          <small>${detail}</small>
+        </article>
+      `,
+    )
+    .join("");
+};
+
+const renderStorage = () => {
+  const player = currentStoragePlayer();
+  storagePlayer = player.uuid;
+  document.querySelector("#storage-title").textContent = `${player.name}'s Pokemon collection`;
+  renderStorageFeatures(player);
+
+  const collection = storageCollection(player);
+  document.querySelector("#storage-count").textContent = `Showing ${collection.length.toLocaleString()} of ${player.counts.total.toLocaleString()} Pokemon`;
+  document.querySelector("#pokemon-grid").innerHTML = collection
+    .map(
+      (mon) => `
+        <article class="pokemon-card ${mon.shiny ? "is-shiny" : ""}">
+          <div class="pokemon-card-top">
+            <div class="pokedex-icon">
+              <img src="${pokemonIcon(mon)}" alt="" onerror="this.src='assets/cobblemon/caught_icon.png'" />
+              <span class="dex-badge"><img src="${mon.shiny ? "assets/cobblemon/button_shiny.png" : "assets/cobblemon/caught_icon.png"}" alt="" /></span>
+            </div>
+            <div>
+              <h3>${titleCase(mon.species)}</h3>
+              <p>${mon.source === "party" ? "Party" : `Box ${mon.box + 1}`} · Slot ${mon.slot + 1}</p>
+            </div>
+            <strong>L${mon.level}</strong>
+          </div>
+          <div class="pokemon-tags">
+            ${mon.shiny ? "<span>Shiny</span>" : ""}
+            ${mon.gender ? `<span>${titleCase(mon.gender.toLowerCase())}</span>` : ""}
+            ${mon.form && mon.form !== "normal" ? `<span>${titleCase(mon.form)}</span>` : ""}
+            ${mon.spawnBucket ? `<span>${titleCase(mon.spawnBucket)}</span>` : ""}
+          </div>
+          <dl>
+            <div><dt>Ability</dt><dd>${titleCase(mon.ability)}</dd></div>
+            <div><dt>Nature</dt><dd>${titleCase(mon.mintedNature || mon.nature)}</dd></div>
+            <div><dt>Tera</dt><dd>${titleCase(mon.teraType)}</dd></div>
+            <div><dt>IV total</dt><dd>${mon.ivTotal}/186</dd></div>
+          </dl>
+          <p class="moves">${(mon.moves || []).map(prettyMove).join(" · ") || "No moves listed"}</p>
+          ${mon.heldItem ? `<p class="held">Held: ${titleCase(mon.heldItem)}</p>` : ""}
+        </article>
+      `,
+    )
+    .join("");
+};
+
+Promise.all([
+  fetch("data/stats-summary.json").then((response) => response.json()),
+  fetch("data/pokemon-storage-summary.json").then((response) => response.json()),
+  fetch("assets/pokemon/icon-manifest.json").then((response) => response.json()).catch(() => ({})),
+]).then(([statsData, storageData, iconData]) => {
+  summary = statsData;
+  storageSummary = storageData;
+  iconManifest = iconData;
+  currentPlayer = summary.players[0].uuid;
+  storagePlayer = storageSummary.players[0].uuid;
+  renderAggregate();
+  renderChampion();
+  renderTabs();
+  renderPlayerSelect();
+  renderChart();
+  renderSelectedPlayer();
+  renderStorageTotals();
+  renderStoragePlayerSelect();
+  renderStorageControls();
+  renderStorage();
+});
