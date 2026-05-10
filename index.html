@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Minecraft Server Stats</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <section class="topbar" aria-labelledby="page-title">
+        <div>
+          <p class="eyebrow">Cobblemon server report</p>
+          <h1 id="page-title">Player Stats Dashboard</h1>
+        </div>
+        <div class="server-chip">
+          <span id="player-count">5</span>
+          <span>players analyzed</span>
+        </div>
+      </section>
+
+      <section class="hero-grid">
+        <div class="panel standout">
+          <p class="section-label">Overall leader</p>
+          <div class="champion">
+            <div class="avatar" id="champion-avatar">Z</div>
+            <div>
+              <h2 id="champion-name">Loading...</h2>
+              <p id="champion-note">Calculating server dominance</p>
+            </div>
+          </div>
+          <div class="score-strip" id="score-strip"></div>
+        </div>
+
+        <div class="metric-grid" id="aggregate-metrics"></div>
+      </section>
+
+      <section class="toolbar" aria-label="Dashboard filters">
+        <div class="tabs" id="metric-tabs"></div>
+        <select id="player-select" aria-label="Choose player"></select>
+      </section>
+
+      <section class="comparison-layout">
+        <div class="panel chart-panel">
+          <div class="panel-head">
+            <div>
+              <p class="section-label">Leaderboard</p>
+              <h2 id="chart-title">Blocks mined</h2>
+            </div>
+            <p id="chart-unit">Total count</p>
+          </div>
+          <div class="bar-chart" id="bar-chart"></div>
+        </div>
+
+        <aside class="panel player-panel">
+          <div class="player-card-head">
+            <div class="avatar large" id="selected-avatar">Z</div>
+            <div>
+              <p class="section-label">Player focus</p>
+              <h2 id="selected-name">Loading...</h2>
+            </div>
+          </div>
+          <div class="player-stats" id="player-stats"></div>
+        </aside>
+      </section>
+
+      <section class="details-grid">
+        <div class="panel">
+          <div class="panel-head">
+            <div>
+              <p class="section-label">Top mined</p>
+              <h2 id="mined-title">Player blocks</h2>
+            </div>
+          </div>
+          <div class="item-list" id="mined-list"></div>
+        </div>
+
+        <div class="panel">
+          <div class="panel-head">
+            <div>
+              <p class="section-label">Top pickups</p>
+              <h2 id="pickup-title">Loot trail</h2>
+            </div>
+          </div>
+          <div class="item-list" id="pickup-list"></div>
+        </div>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>

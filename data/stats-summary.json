@@ -1,0 +1,1055 @@
+{
+  "generatedAt": "2026-05-10T23:10:35.985Z",
+  "source": "Minecraft server stats JSON files",
+  "aggregateTotals": {
+    "playHours": 215.8,
+    "distanceKm": 1712.9,
+    "deaths": 27,
+    "jumps": 157062,
+    "blocksMined": 26258,
+    "itemsUsed": 72826,
+    "itemsPickedUp": 48212,
+    "itemsCrafted": 14564,
+    "itemsDropped": 6826,
+    "chestsOpened": 9702,
+    "barrelsOpened": 4410,
+    "fishCaught": 359,
+    "captures": 445,
+    "shiniesCaptured": 38,
+    "eggsHatched": 283,
+    "dexEntries": 14459,
+    "battlesWon": 422,
+    "battlesTotal": 1797,
+    "raidsCompleted": 32,
+    "raidsJoined": 96,
+    "waystonesActivated": 182
+  },
+  "leaders": {
+    "playHours": "UnlikePowerX",
+    "distanceKm": "ZippyHere",
+    "deaths": "ZippyHere",
+    "jumps": "ZippyHere",
+    "blocksMined": "ZippyHere",
+    "itemsUsed": "ZippyHere",
+    "itemsPickedUp": "ZippyHere",
+    "itemsCrafted": "ZippyHere",
+    "itemsDropped": "ZippyHere",
+    "chestsOpened": "ZippyHere",
+    "barrelsOpened": "ZippyHere",
+    "fishCaught": "ZippyHere",
+    "captures": "UnlikePowerX",
+    "shiniesCaptured": "UnlikePowerX",
+    "eggsHatched": "ZippyHere",
+    "dexEntries": "UnlikePowerX",
+    "battlesWon": "ZippyHere",
+    "battlesTotal": "UnlikePowerX",
+    "raidsCompleted": "ZippyHere",
+    "raidsJoined": "ZippyHere",
+    "waystonesActivated": "ZippyHere",
+    "battleWinRate": "ZippyHere",
+    "capturesPerHour": "Dycrp_t",
+    "shinyRate": "Dycrp_t"
+  },
+  "players": [
+    {
+      "uuid": "94543733-c7cf-42e5-b62c-76e7fd68973b",
+      "name": "ZippyHere",
+      "totals": {
+        "playHours": 83.2,
+        "distanceKm": 851.7,
+        "deaths": 21,
+        "jumps": 83729,
+        "blocksMined": 18652,
+        "itemsUsed": 62947,
+        "itemsPickedUp": 28476,
+        "itemsCrafted": 10324,
+        "itemsDropped": 4413,
+        "chestsOpened": 6423,
+        "barrelsOpened": 1977,
+        "fishCaught": 183,
+        "captures": 132,
+        "shiniesCaptured": 12,
+        "eggsHatched": 194,
+        "dexEntries": 3844,
+        "battlesWon": 205,
+        "battlesTotal": 693,
+        "raidsCompleted": 17,
+        "raidsJoined": 51,
+        "waystonesActivated": 81
+      },
+      "rates": {
+        "battleWinRate": 29.6,
+        "capturesPerHour": 1.59,
+        "shinyRate": 9.1
+      },
+      "top": {
+        "mined": [
+          {
+            "id": "minecraft:netherrack",
+            "label": "Netherrack",
+            "value": 5789
+          },
+          {
+            "id": "minecraft:dirt",
+            "label": "Dirt",
+            "value": 2427
+          },
+          {
+            "id": "minecraft:stone",
+            "label": "Stone",
+            "value": 1752
+          },
+          {
+            "id": "minecraft:grass_block",
+            "label": "Grass Block",
+            "value": 1299
+          },
+          {
+            "id": "minecraft:deepslate",
+            "label": "Deepslate",
+            "value": 614
+          },
+          {
+            "id": "minecraft:oak_log",
+            "label": "Oak Log",
+            "value": 540
+          },
+          {
+            "id": "minecraft:fire",
+            "label": "Fire",
+            "value": 280
+          },
+          {
+            "id": "minecraft:soul_sand",
+            "label": "Soul Sand",
+            "value": 268
+          }
+        ],
+        "pickedUp": [
+          {
+            "id": "minecraft:netherrack",
+            "label": "Netherrack",
+            "value": 5266
+          },
+          {
+            "id": "minecraft:dirt",
+            "label": "Dirt",
+            "value": 4348
+          },
+          {
+            "id": "cobblemon:relic_coin",
+            "label": "Relic Coin",
+            "value": 3354
+          },
+          {
+            "id": "minecraft:cobblestone",
+            "label": "Cobblestone",
+            "value": 1653
+          },
+          {
+            "id": "cobblemon:ultra_ball",
+            "label": "Ultra Ball",
+            "value": 770
+          },
+          {
+            "id": "minecraft:stone",
+            "label": "Stone",
+            "value": 565
+          },
+          {
+            "id": "minecraft:oak_log",
+            "label": "Oak Log",
+            "value": 557
+          },
+          {
+            "id": "minecraft:lapis_lazuli",
+            "label": "Lapis Lazuli",
+            "value": 477
+          }
+        ],
+        "used": [
+          {
+            "id": "minecraft:fishing_rod",
+            "label": "Fishing Rod",
+            "value": 36750
+          },
+          {
+            "id": "minecraft:diamond_pickaxe",
+            "label": "Diamond Pickaxe",
+            "value": 11359
+          },
+          {
+            "id": "minecraft:diamond_shovel",
+            "label": "Diamond Shovel",
+            "value": 3838
+          },
+          {
+            "id": "minecraft:dirt",
+            "label": "Dirt",
+            "value": 3018
+          },
+          {
+            "id": "minecraft:diamond_axe",
+            "label": "Diamond Axe",
+            "value": 1737
+          },
+          {
+            "id": "minecraft:netherrack",
+            "label": "Netherrack",
+            "value": 1062
+          },
+          {
+            "id": "minecraft:bone_meal",
+            "label": "Bone Meal",
+            "value": 977
+          },
+          {
+            "id": "minecraft:cobblestone",
+            "label": "Cobblestone",
+            "value": 502
+          }
+        ],
+        "crafted": [
+          {
+            "id": "minecraft:oak_planks",
+            "label": "Oak Planks",
+            "value": 2108
+          },
+          {
+            "id": "cobblemon:relic_coin_pouch",
+            "label": "Relic Coin Pouch",
+            "value": 1901
+          },
+          {
+            "id": "minecraft:bone_meal",
+            "label": "Bone Meal",
+            "value": 1006
+          },
+          {
+            "id": "minecraft:copper_ingot",
+            "label": "Copper Ingot",
+            "value": 757
+          },
+          {
+            "id": "minecraft:spruce_planks",
+            "label": "Spruce Planks",
+            "value": 488
+          },
+          {
+            "id": "minecraft:iron_ingot",
+            "label": "Iron Ingot",
+            "value": 402
+          },
+          {
+            "id": "minecraft:jungle_planks",
+            "label": "Jungle Planks",
+            "value": 376
+          },
+          {
+            "id": "minecraft:stick",
+            "label": "Stick",
+            "value": 296
+          }
+        ]
+      },
+      "score": 6.66
+    },
+    {
+      "uuid": "e0555f85-6676-43a8-b3d1-d919af22e6db",
+      "name": "UnlikePowerX",
+      "totals": {
+        "playHours": 87.1,
+        "distanceKm": 558.4,
+        "deaths": 1,
+        "jumps": 30344,
+        "blocksMined": 5895,
+        "itemsUsed": 8221,
+        "itemsPickedUp": 15458,
+        "itemsCrafted": 4073,
+        "itemsDropped": 1401,
+        "chestsOpened": 2706,
+        "barrelsOpened": 1395,
+        "fishCaught": 174,
+        "captures": 208,
+        "shiniesCaptured": 19,
+        "eggsHatched": 84,
+        "dexEntries": 8774,
+        "battlesWon": 156,
+        "battlesTotal": 797,
+        "raidsCompleted": 8,
+        "raidsJoined": 15,
+        "waystonesActivated": 45
+      },
+      "rates": {
+        "battleWinRate": 19.6,
+        "capturesPerHour": 2.39,
+        "shinyRate": 9.1
+      },
+      "top": {
+        "mined": [
+          {
+            "id": "minecraft:stone",
+            "label": "Stone",
+            "value": 1120
+          },
+          {
+            "id": "minecraft:pink_petals",
+            "label": "Pink Petals",
+            "value": 499
+          },
+          {
+            "id": "minecraft:sand",
+            "label": "Sand",
+            "value": 451
+          },
+          {
+            "id": "minecraft:short_grass",
+            "label": "Short Grass",
+            "value": 440
+          },
+          {
+            "id": "minecraft:dirt",
+            "label": "Dirt",
+            "value": 275
+          },
+          {
+            "id": "minecraft:grass_block",
+            "label": "Grass Block",
+            "value": 210
+          },
+          {
+            "id": "cobblemon:vivichoke_seeds",
+            "label": "Vivichoke Seeds",
+            "value": 194
+          },
+          {
+            "id": "minecraft:andesite",
+            "label": "Andesite",
+            "value": 158
+          }
+        ],
+        "pickedUp": [
+          {
+            "id": "cobblemon:relic_coin",
+            "label": "Relic Coin",
+            "value": 4597
+          },
+          {
+            "id": "minecraft:cobblestone",
+            "label": "Cobblestone",
+            "value": 1287
+          },
+          {
+            "id": "minecraft:pink_petals",
+            "label": "Pink Petals",
+            "value": 1283
+          },
+          {
+            "id": "minecraft:dirt",
+            "label": "Dirt",
+            "value": 501
+          },
+          {
+            "id": "minecraft:sand",
+            "label": "Sand",
+            "value": 460
+          },
+          {
+            "id": "minecraft:raw_copper",
+            "label": "Raw Copper",
+            "value": 398
+          },
+          {
+            "id": "minecraft:leaf_litter",
+            "label": "Leaf Litter",
+            "value": 320
+          },
+          {
+            "id": "cobblemon:medicinal_leek",
+            "label": "Medicinal Leek",
+            "value": 271
+          }
+        ],
+        "used": [
+          {
+            "id": "minecraft:diamond_pickaxe",
+            "label": "Diamond Pickaxe",
+            "value": 1534
+          },
+          {
+            "id": "minecraft:pink_petals",
+            "label": "Pink Petals",
+            "value": 1226
+          },
+          {
+            "id": "minecraft:bone_meal",
+            "label": "Bone Meal",
+            "value": 1028
+          },
+          {
+            "id": "minecraft:iron_pickaxe",
+            "label": "Iron Pickaxe",
+            "value": 774
+          },
+          {
+            "id": "minecraft:stone_pickaxe",
+            "label": "Stone Pickaxe",
+            "value": 540
+          },
+          {
+            "id": "minecraft:diamond_shovel",
+            "label": "Diamond Shovel",
+            "value": 442
+          },
+          {
+            "id": "minecraft:leaf_litter",
+            "label": "Leaf Litter",
+            "value": 275
+          },
+          {
+            "id": "minecraft:iron_shovel",
+            "label": "Iron Shovel",
+            "value": 250
+          }
+        ],
+        "crafted": [
+          {
+            "id": "minecraft:bone_meal",
+            "label": "Bone Meal",
+            "value": 1044
+          },
+          {
+            "id": "cobblemon:relic_coin_pouch",
+            "label": "Relic Coin Pouch",
+            "value": 500
+          },
+          {
+            "id": "minecraft:glass",
+            "label": "Glass",
+            "value": 278
+          },
+          {
+            "id": "minecraft:oak_planks",
+            "label": "Oak Planks",
+            "value": 244
+          },
+          {
+            "id": "minecraft:copper_ingot",
+            "label": "Copper Ingot",
+            "value": 221
+          },
+          {
+            "id": "minecraft:glass_bottle",
+            "label": "Glass Bottle",
+            "value": 219
+          },
+          {
+            "id": "minecraft:stick",
+            "label": "Stick",
+            "value": 216
+          },
+          {
+            "id": "minecraft:iron_ingot",
+            "label": "Iron Ingot",
+            "value": 169
+          }
+        ]
+      },
+      "score": 5.99
+    },
+    {
+      "uuid": "1d518db4-6981-4f8a-895e-b5e0e396798e",
+      "name": "xxiumai",
+      "totals": {
+        "playHours": 37.3,
+        "distanceKm": 225.3,
+        "deaths": 4,
+        "jumps": 32447,
+        "blocksMined": 1380,
+        "itemsUsed": 1451,
+        "itemsPickedUp": 3283,
+        "itemsCrafted": 21,
+        "itemsDropped": 659,
+        "chestsOpened": 487,
+        "barrelsOpened": 856,
+        "fishCaught": 0,
+        "captures": 85,
+        "shiniesCaptured": 5,
+        "eggsHatched": 4,
+        "dexEntries": 1713,
+        "battlesWon": 57,
+        "battlesTotal": 266,
+        "raidsCompleted": 5,
+        "raidsJoined": 20,
+        "waystonesActivated": 41
+      },
+      "rates": {
+        "battleWinRate": 21.4,
+        "capturesPerHour": 2.28,
+        "shinyRate": 5.9
+      },
+      "top": {
+        "mined": [
+          {
+            "id": "minecraft:stone",
+            "label": "Stone",
+            "value": 394
+          },
+          {
+            "id": "minecraft:deepslate",
+            "label": "Deepslate",
+            "value": 164
+          },
+          {
+            "id": "minecraft:powder_snow",
+            "label": "Powder Snow",
+            "value": 142
+          },
+          {
+            "id": "minecraft:dirt",
+            "label": "Dirt",
+            "value": 93
+          },
+          {
+            "id": "minecraft:grass_block",
+            "label": "Grass Block",
+            "value": 48
+          },
+          {
+            "id": "minecraft:tuff",
+            "label": "Tuff",
+            "value": 29
+          },
+          {
+            "id": "minecraft:cobblestone",
+            "label": "Cobblestone",
+            "value": 27
+          },
+          {
+            "id": "minecraft:packed_ice",
+            "label": "Packed Ice",
+            "value": 26
+          }
+        ],
+        "pickedUp": [
+          {
+            "id": "minecraft:cobblestone",
+            "label": "Cobblestone",
+            "value": 342
+          },
+          {
+            "id": "minecraft:cobbled_deepslate",
+            "label": "Cobbled Deepslate",
+            "value": 322
+          },
+          {
+            "id": "cobblemon:relic_coin",
+            "label": "Relic Coin",
+            "value": 215
+          },
+          {
+            "id": "minecraft:dirt",
+            "label": "Dirt",
+            "value": 212
+          },
+          {
+            "id": "cobblemon:red_apricorn",
+            "label": "Red Apricorn",
+            "value": 125
+          },
+          {
+            "id": "cobblemon:ultra_ball",
+            "label": "Ultra Ball",
+            "value": 83
+          },
+          {
+            "id": "minecraft:tuff",
+            "label": "Tuff",
+            "value": 78
+          },
+          {
+            "id": "cobblemon:premier_ball",
+            "label": "Premier Ball",
+            "value": 72
+          }
+        ],
+        "used": [
+          {
+            "id": "minecraft:diamond_pickaxe",
+            "label": "Diamond Pickaxe",
+            "value": 746
+          },
+          {
+            "id": "minecraft:dirt",
+            "label": "Dirt",
+            "value": 128
+          },
+          {
+            "id": "minecraft:cobblestone",
+            "label": "Cobblestone",
+            "value": 114
+          },
+          {
+            "id": "minecraft:stone_pickaxe",
+            "label": "Stone Pickaxe",
+            "value": 76
+          },
+          {
+            "id": "minecraft:diamond_axe",
+            "label": "Diamond Axe",
+            "value": 76
+          },
+          {
+            "id": "minecraft:golden_axe",
+            "label": "Golden Axe",
+            "value": 34
+          },
+          {
+            "id": "minecraft:golden_pickaxe",
+            "label": "Golden Pickaxe",
+            "value": 33
+          },
+          {
+            "id": "minecraft:spruce_planks",
+            "label": "Spruce Planks",
+            "value": 26
+          }
+        ],
+        "crafted": [
+          {
+            "id": "minecraft:oak_planks",
+            "label": "Oak Planks",
+            "value": 8
+          },
+          {
+            "id": "minecraft:birch_planks",
+            "label": "Birch Planks",
+            "value": 4
+          },
+          {
+            "id": "minecraft:dark_oak_planks",
+            "label": "Dark Oak Planks",
+            "value": 4
+          },
+          {
+            "id": "carved_wood:dark_oak_crafting_table",
+            "label": "Dark Oak Crafting Table",
+            "value": 1
+          },
+          {
+            "id": "sophisticatedbackpacks:diamond_backpack",
+            "label": "Diamond Backpack",
+            "value": 1
+          },
+          {
+            "id": "carved_wood:birch_crafting_table",
+            "label": "Birch Crafting Table",
+            "value": 1
+          },
+          {
+            "id": "sophisticatedbackpacks:gold_backpack",
+            "label": "Gold Backpack",
+            "value": 1
+          },
+          {
+            "id": "minecraft:oak_boat",
+            "label": "Oak Boat",
+            "value": 1
+          }
+        ]
+      },
+      "score": 2.04
+    },
+    {
+      "uuid": "86739f5c-0ab4-43e1-a130-ff2d009dd22c",
+      "name": "b0ngi",
+      "totals": {
+        "playHours": 5.3,
+        "distanceKm": 50.4,
+        "deaths": 1,
+        "jumps": 8235,
+        "blocksMined": 262,
+        "itemsUsed": 180,
+        "itemsPickedUp": 674,
+        "itemsCrafted": 127,
+        "itemsDropped": 155,
+        "chestsOpened": 66,
+        "barrelsOpened": 173,
+        "fishCaught": 2,
+        "captures": 12,
+        "shiniesCaptured": 1,
+        "eggsHatched": 0,
+        "dexEntries": 79,
+        "battlesWon": 0,
+        "battlesTotal": 18,
+        "raidsCompleted": 1,
+        "raidsJoined": 4,
+        "waystonesActivated": 12
+      },
+      "rates": {
+        "battleWinRate": 0,
+        "capturesPerHour": 2.24,
+        "shinyRate": 8.3
+      },
+      "top": {
+        "mined": [
+          {
+            "id": "minecraft:short_grass",
+            "label": "Short Grass",
+            "value": 69
+          },
+          {
+            "id": "minecraft:coal_ore",
+            "label": "Coal Ore",
+            "value": 34
+          },
+          {
+            "id": "minecraft:stone",
+            "label": "Stone",
+            "value": 26
+          },
+          {
+            "id": "minecraft:leaf_litter",
+            "label": "Leaf Litter",
+            "value": 13
+          },
+          {
+            "id": "cobblemon:relic_coin_pouch",
+            "label": "Relic Coin Pouch",
+            "value": 9
+          },
+          {
+            "id": "minecraft:grass_block",
+            "label": "Grass Block",
+            "value": 8
+          },
+          {
+            "id": "minecraft:sandstone",
+            "label": "Sandstone",
+            "value": 8
+          },
+          {
+            "id": "minecraft:brown_carpet",
+            "label": "Brown Carpet",
+            "value": 7
+          }
+        ],
+        "pickedUp": [
+          {
+            "id": "cobblemon:relic_coin",
+            "label": "Relic Coin",
+            "value": 132
+          },
+          {
+            "id": "cobblemon:pink_apricorn",
+            "label": "Pink Apricorn",
+            "value": 58
+          },
+          {
+            "id": "minecraft:raw_copper",
+            "label": "Raw Copper",
+            "value": 39
+          },
+          {
+            "id": "minecraft:coal",
+            "label": "Coal",
+            "value": 37
+          },
+          {
+            "id": "minecraft:leaf_litter",
+            "label": "Leaf Litter",
+            "value": 27
+          },
+          {
+            "id": "minecraft:cobblestone",
+            "label": "Cobblestone",
+            "value": 27
+          },
+          {
+            "id": "minecraft:lapis_lazuli",
+            "label": "Lapis Lazuli",
+            "value": 26
+          },
+          {
+            "id": "cobblemon:roseate_ball",
+            "label": "Roseate Ball",
+            "value": 24
+          }
+        ],
+        "used": [
+          {
+            "id": "minecraft:iron_pickaxe",
+            "label": "Iron Pickaxe",
+            "value": 60
+          },
+          {
+            "id": "minecraft:stone_pickaxe",
+            "label": "Stone Pickaxe",
+            "value": 45
+          },
+          {
+            "id": "minecraft:spruce_boat",
+            "label": "Spruce Boat",
+            "value": 14
+          },
+          {
+            "id": "minecraft:cobblestone",
+            "label": "Cobblestone",
+            "value": 11
+          },
+          {
+            "id": "minecraft:dirt",
+            "label": "Dirt",
+            "value": 8
+          },
+          {
+            "id": "minecraft:sandstone",
+            "label": "Sandstone",
+            "value": 8
+          },
+          {
+            "id": "minecraft:wooden_pickaxe",
+            "label": "Wooden Pickaxe",
+            "value": 8
+          },
+          {
+            "id": "carved_wood:spruce_crafting_table",
+            "label": "Spruce Crafting Table",
+            "value": 7
+          }
+        ],
+        "crafted": [
+          {
+            "id": "cobblemon:roseate_ball",
+            "label": "Roseate Ball",
+            "value": 56
+          },
+          {
+            "id": "minecraft:spruce_planks",
+            "label": "Spruce Planks",
+            "value": 28
+          },
+          {
+            "id": "minecraft:copper_ingot",
+            "label": "Copper Ingot",
+            "value": 10
+          },
+          {
+            "id": "cobblemon:citrine_ball",
+            "label": "Citrine Ball",
+            "value": 8
+          },
+          {
+            "id": "minecraft:stick",
+            "label": "Stick",
+            "value": 8
+          },
+          {
+            "id": "cobblemon:verdant_ball",
+            "label": "Verdant Ball",
+            "value": 4
+          },
+          {
+            "id": "carved_wood:spruce_crafting_table",
+            "label": "Spruce Crafting Table",
+            "value": 4
+          },
+          {
+            "id": "minecraft:iron_ingot",
+            "label": "Iron Ingot",
+            "value": 4
+          }
+        ]
+      },
+      "score": 0.34
+    },
+    {
+      "uuid": "5be41d17-f5ca-4fb6-97ee-043f5ba3a0f2",
+      "name": "Dycrp_t",
+      "totals": {
+        "playHours": 2.9,
+        "distanceKm": 27.1,
+        "deaths": 0,
+        "jumps": 2307,
+        "blocksMined": 69,
+        "itemsUsed": 27,
+        "itemsPickedUp": 321,
+        "itemsCrafted": 19,
+        "itemsDropped": 198,
+        "chestsOpened": 20,
+        "barrelsOpened": 9,
+        "fishCaught": 0,
+        "captures": 8,
+        "shiniesCaptured": 1,
+        "eggsHatched": 1,
+        "dexEntries": 49,
+        "battlesWon": 4,
+        "battlesTotal": 23,
+        "raidsCompleted": 1,
+        "raidsJoined": 6,
+        "waystonesActivated": 3
+      },
+      "rates": {
+        "battleWinRate": 17.4,
+        "capturesPerHour": 2.77,
+        "shinyRate": 12.5
+      },
+      "top": {
+        "mined": [
+          {
+            "id": "minecraft:birch_leaves",
+            "label": "Birch Leaves",
+            "value": 18
+          },
+          {
+            "id": "minecraft:dirt",
+            "label": "Dirt",
+            "value": 18
+          },
+          {
+            "id": "minecraft:grass_block",
+            "label": "Grass Block",
+            "value": 11
+          },
+          {
+            "id": "minecraft:short_grass",
+            "label": "Short Grass",
+            "value": 7
+          },
+          {
+            "id": "minecraft:dark_oak_log",
+            "label": "Dark Oak Log",
+            "value": 6
+          },
+          {
+            "id": "minecraft:powder_snow",
+            "label": "Powder Snow",
+            "value": 2
+          },
+          {
+            "id": "minecraft:iron_ore",
+            "label": "Iron Ore",
+            "value": 2
+          },
+          {
+            "id": "minecraft:spruce_log",
+            "label": "Spruce Log",
+            "value": 2
+          }
+        ],
+        "pickedUp": [
+          {
+            "id": "minecraft:gold_ingot",
+            "label": "Gold Ingot",
+            "value": 64
+          },
+          {
+            "id": "minecraft:dirt",
+            "label": "Dirt",
+            "value": 63
+          },
+          {
+            "id": "cobblemon:ultra_ball",
+            "label": "Ultra Ball",
+            "value": 58
+          },
+          {
+            "id": "minecraft:copper_ingot",
+            "label": "Copper Ingot",
+            "value": 40
+          },
+          {
+            "id": "cobblemon:exp_candy_l",
+            "label": "Exp Candy L",
+            "value": 16
+          },
+          {
+            "id": "cobblemon:ancient_slate_ball",
+            "label": "Ancient Slate Ball",
+            "value": 14
+          },
+          {
+            "id": "cobblemon:poke_ball",
+            "label": "Poke Ball",
+            "value": 13
+          },
+          {
+            "id": "cobblemon:ancient_citrine_ball",
+            "label": "Ancient Citrine Ball",
+            "value": 7
+          }
+        ],
+        "used": [
+          {
+            "id": "minecraft:dirt",
+            "label": "Dirt",
+            "value": 13
+          },
+          {
+            "id": "minecraft:dark_oak_log",
+            "label": "Dark Oak Log",
+            "value": 5
+          },
+          {
+            "id": "minecraft:stone_pickaxe",
+            "label": "Stone Pickaxe",
+            "value": 3
+          },
+          {
+            "id": "cobblemon:potion",
+            "label": "Potion",
+            "value": 2
+          },
+          {
+            "id": "cobblemonraiddens:raid_pouch",
+            "label": "Raid Pouch",
+            "value": 2
+          },
+          {
+            "id": "minecraft:wooden_pickaxe",
+            "label": "Wooden Pickaxe",
+            "value": 1
+          },
+          {
+            "id": "carved_wood:spruce_crafting_table",
+            "label": "Spruce Crafting Table",
+            "value": 1
+          }
+        ],
+        "crafted": [
+          {
+            "id": "minecraft:spruce_planks",
+            "label": "Spruce Planks",
+            "value": 8
+          },
+          {
+            "id": "minecraft:stick",
+            "label": "Stick",
+            "value": 4
+          },
+          {
+            "id": "minecraft:dark_oak_planks",
+            "label": "Dark Oak Planks",
+            "value": 4
+          },
+          {
+            "id": "minecraft:wooden_pickaxe",
+            "label": "Wooden Pickaxe",
+            "value": 1
+          },
+          {
+            "id": "sophisticatedbackpacks:gold_backpack",
+            "label": "Gold Backpack",
+            "value": 1
+          },
+          {
+            "id": "carved_wood:spruce_crafting_table",
+            "label": "Spruce Crafting Table",
+            "value": 1
+          }
+        ]
+      },
+      "score": 0.24
+    }
+  ]
+}
