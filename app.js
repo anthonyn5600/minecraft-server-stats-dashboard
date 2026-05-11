@@ -91,10 +91,10 @@ const renderAggregate = () => {
   document.querySelector("#player-count").textContent = summary.players.length;
   const container = document.querySelector("#aggregate-metrics");
   container.innerHTML = aggregateCards
-    .map(([key, title, label]) => {
+    .map(([key, title, label], index) => {
       const leader = summary.leaders[key];
       return `
-        <article class="panel metric">
+        <article class="panel metric" style="--accent:${colors[index % colors.length]}">
           <p class="section-label">${title}</p>
           <strong>${formatNumber(summary.aggregateTotals[key])}</strong>
           <span>${label}</span><br>
@@ -107,9 +107,14 @@ const renderAggregate = () => {
 
 const renderChampion = () => {
   const champion = summary.players[0];
+  const championStorage = storageSummary?.players?.find((player) => player.name === champion.name);
+  const topPokemon = championStorage?.highestLevel?.[0] || championStorage?.bestIvs?.[0];
   document.querySelector("#champion-name").textContent = champion.name;
   document.querySelector("#champion-note").textContent = `${champion.score} weighted score across playtime, mining, travel, raids, captures, shinies, and dex progress.`;
   document.querySelector("#champion-avatar").textContent = avatarText(champion.name);
+  document.querySelector("#champion-sprite").innerHTML = topPokemon
+    ? `<img src="${pokemonIcon(topPokemon)}" alt="" onerror="this.src='assets/cobblemon/caught_icon.png'" />`
+    : `<img src="assets/cobblemon/caught_icon.png" alt="" />`;
 
   const maxScore = Math.max(...summary.players.map((player) => player.score));
   document.querySelector("#score-strip").innerHTML = summary.players
@@ -171,7 +176,7 @@ const renderChart = () => {
         <div class="bar-row">
           <span class="bar-name">${player.name}</span>
           <div class="bar-track">
-            <div class="bar-fill" style="--value: ${(value / max) * 100}%; background: linear-gradient(90deg, ${colors[index]}, #f3f5ec);"></div>
+            <div class="bar-fill" style="--value: ${(value / max) * 100}%; --bar-color:${colors[index % colors.length]};"></div>
           </div>
           <span class="bar-value">${formatNumber(value, currentMetric === "battleWinRate" ? "%" : "")}</span>
         </div>
