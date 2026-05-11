@@ -86,6 +86,7 @@ const titleCase = (value = "") =>
 const prettyMove = (value = "") => titleCase(value.replace(/([a-z])([A-Z])/g, "$1 $2"));
 const pokemonIcon = (mon) => iconManifest[mon.species] || "assets/cobblemon/caught_icon.png";
 const typeColor = (type) => typeColors[type] || typeColors.unknown;
+const typeListText = (types = []) => types.map((entry) => titleCase(entry.type)).join(", ");
 
 const renderAggregate = () => {
   document.querySelector("#player-count").textContent = summary.players.length;
@@ -169,10 +170,14 @@ const renderChart = () => {
 
   document.querySelector("#chart-title").textContent = tab.title;
   document.querySelector("#chart-unit").textContent = tab.unit;
-  document.querySelector("#bar-chart").innerHTML = players
-    .map((player, index) => {
-      const value = getMetric(player, currentMetric);
-      return `
+  document.querySelector("#bar-chart").innerHTML = `
+    <p class="sr-only">
+      ${tab.title} leaderboard. ${players[0].name} leads with ${formatNumber(getMetric(players[0], currentMetric), currentMetric === "battleWinRate" ? "%" : "")}.
+    </p>
+    ${players
+      .map((player, index) => {
+        const value = getMetric(player, currentMetric);
+        return `
         <div class="bar-row">
           <span class="bar-name">${player.name}</span>
           <div class="bar-track">
@@ -181,8 +186,9 @@ const renderChart = () => {
           <span class="bar-value">${formatNumber(value, currentMetric === "battleWinRate" ? "%" : "")}</span>
         </div>
       `;
-    })
-    .join("");
+      })
+      .join("")}
+  `;
 };
 
 const renderSelectedPlayer = () => {
@@ -363,6 +369,10 @@ const renderTypeInfographics = () => {
   const bestIv = player.bestIvs?.[0];
   const typeEntries = player.typeSummary?.typeEntries || 0;
   const fallbackCount = player.typeSummary?.fallbackPokemon || 0;
+  const topTypeNames = typeListText(topTypes.slice(0, 3));
+  const insight = topTypes.length
+    ? `${player.name} leans ${topTypeNames} with ${player.counts.shiny} shinies, ${player.counts.level100} level 100s, and ${player.counts.rareBucket} rare bucket Pokemon.`
+    : `${player.name} has ${player.counts.total} Pokemon in PC and party storage.`;
 
   document.querySelector("#type-card-grid").innerHTML = `
     <article class="type-card">
@@ -373,6 +383,7 @@ const renderTypeInfographics = () => {
         </div>
         <span>${player.counts.shiny} shiny</span>
       </div>
+      <p class="type-insight">${insight}</p>
       <div class="donut-layout">
         <div class="donut-wrap" aria-label="${player.name} type distribution">
           <svg class="donut-chart" viewBox="0 0 42 42" role="img">
@@ -398,6 +409,14 @@ const renderTypeInfographics = () => {
               `;
             })
             .join("")}
+          <p class="sr-only">
+            ${player.name} top species types: ${topTypes
+              .map((entry) => {
+                const percentage = typeEntries ? ((entry.count / typeEntries) * 100).toFixed(1) : "0.0";
+                return `${titleCase(entry.type)} ${entry.count}, ${percentage} percent`;
+              })
+              .join("; ")}.
+          </p>
         </div>
       </div>
       <div class="type-card-stats">

@@ -32,6 +32,15 @@ body {
   overflow-x: hidden;
 }
 
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+}
+
 .shell {
   width: min(1320px, calc(100% - 32px));
   margin: 0 auto;
@@ -252,13 +261,6 @@ select {
   background: var(--accent, var(--green));
 }
 
-.metric:hover,
-.pokemon-card:hover,
-.type-card:hover,
-.storage-feature-grid article:hover {
-  transform: translateY(-2px);
-}
-
 .metric strong {
   display: block;
   margin: 16px 0 6px;
@@ -299,7 +301,7 @@ select {
 
 .tab,
 select {
-  min-height: 40px;
+  min-height: 44px;
   border-radius: 8px;
   color: var(--text);
   font: inherit;
@@ -436,6 +438,7 @@ select {
 
 .storage-section {
   margin-top: 16px;
+  margin-bottom: 16px;
 }
 
 .storage-head {
@@ -482,7 +485,7 @@ select {
 }
 
 input[type="search"] {
-  min-height: 40px;
+  min-height: 44px;
   width: 100%;
   border: 1px solid var(--line);
   border-radius: 8px;
@@ -500,6 +503,13 @@ input[type="search"]:focus,
 select:focus,
 .tab:focus-visible {
   border-color: rgba(101, 201, 210, 0.65);
+}
+
+input[type="search"]:focus-visible,
+select:focus-visible,
+.tab:focus-visible {
+  outline: 2px solid var(--cyan);
+  outline-offset: 3px;
 }
 
 input[type="search"]::placeholder {
@@ -567,6 +577,7 @@ input[type="search"]::placeholder {
   grid-template-columns: minmax(180px, 0.8fr) minmax(360px, 1.35fr) minmax(280px, 1fr);
   grid-template-areas:
     "head chart stats"
+    "insight chart stats"
     "note chart stats";
   gap: 16px;
   align-items: center;
@@ -579,6 +590,14 @@ input[type="search"]::placeholder {
     transform 180ms ease,
     border-color 180ms ease,
     background-color 180ms ease;
+}
+
+.type-insight {
+  grid-area: insight;
+  margin: 0;
+  color: var(--text);
+  font-size: 0.92rem;
+  line-height: 1.45;
 }
 
 .type-card-head {
@@ -928,6 +947,7 @@ input[type="search"]::placeholder {
     grid-template-columns: minmax(0, 1fr);
     grid-template-areas:
       "head"
+      "insight"
       "chart"
       "stats"
       "note";
@@ -986,10 +1006,29 @@ input[type="search"]::placeholder {
   }
 
   .metric-grid,
-  .player-stats,
   .storage-feature-grid,
   .pokemon-grid {
     grid-template-columns: 1fr;
+  }
+
+  .metric-grid,
+  .player-stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .metric {
+    min-height: 104px;
+    padding: 14px;
+  }
+
+  .metric strong {
+    margin-top: 10px;
+    font-size: 1.55rem;
+  }
+
+  .metric span,
+  .metric small {
+    font-size: 0.76rem;
   }
 
   .bar-row,
@@ -1012,12 +1051,13 @@ input[type="search"]::placeholder {
   }
 
   .donut-layout {
-    grid-template-columns: 118px minmax(0, 1fr);
+    grid-template-columns: minmax(0, 1fr);
     gap: 12px;
   }
 
   .donut-wrap {
     width: 118px;
+    margin: 0 auto;
   }
 
   .donut-center {

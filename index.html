@@ -3,21 +3,21 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Minecraft Server Stats</title>
+    <title>Cobblemon Trainer Terminal</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css?v=visual-refresh-1" />
+    <link rel="stylesheet" href="styles.css?v=trainer-terminal-1" />
   </head>
   <body>
     <main class="shell">
       <section class="topbar" aria-labelledby="page-title">
         <div>
           <p class="eyebrow">Cobblemon server report</p>
-          <h1 id="page-title">Player Stats Dashboard</h1>
+          <h1 id="page-title">Trainer Terminal</h1>
         </div>
         <div class="server-chip">
           <span id="player-count">5</span>
@@ -40,6 +40,49 @@
         </div>
 
         <div class="metric-grid" id="aggregate-metrics"></div>
+      </section>
+
+      <section class="storage-section panel" aria-labelledby="storage-title">
+        <div class="panel-head storage-head">
+          <div>
+            <p class="section-label">Trainer collection</p>
+            <h2 id="storage-title">Pokemon collection</h2>
+          </div>
+          <div class="storage-totals" id="storage-totals"></div>
+        </div>
+
+        <div class="storage-toolbar" aria-label="Pokemon storage filters">
+          <select id="storage-player-select" aria-label="Choose storage player"></select>
+          <div class="segmented" id="storage-view-tabs">
+            <button class="tab active" data-storage-view="all">All</button>
+            <button class="tab" data-storage-view="party">Party</button>
+            <button class="tab" data-storage-view="pc">PC</button>
+            <button class="tab" data-storage-view="shiny">Shiny</button>
+          </div>
+          <select id="storage-sort" aria-label="Sort Pokemon">
+            <option value="level">Highest level</option>
+            <option value="ivTotal">Best IV total</option>
+            <option value="species">Species name</option>
+            <option value="box">Box order</option>
+          </select>
+          <input id="storage-search" type="search" placeholder="Search species, moves, ability" />
+        </div>
+
+        <div class="storage-feature-grid" id="storage-feature-grid"></div>
+        <section class="type-infographic" aria-labelledby="type-infographic-title">
+          <div class="panel-head infographic-head">
+            <div>
+              <p class="section-label">PC type infographics</p>
+              <h2 id="type-infographic-title">Collection balance by player</h2>
+            </div>
+            <p>Species type distribution across PC and party Pokemon</p>
+          </div>
+          <div class="type-card-grid" id="type-card-grid"></div>
+        </section>
+        <div class="storage-count" id="storage-count"></div>
+        <div class="pokemon-scroll-window">
+          <div class="pokemon-grid" id="pokemon-grid"></div>
+        </div>
       </section>
 
       <section class="toolbar" aria-label="Dashboard filters">
@@ -92,51 +135,8 @@
           <div class="item-list" id="pickup-list"></div>
         </div>
       </section>
-
-      <section class="storage-section panel" aria-labelledby="storage-title">
-        <div class="panel-head storage-head">
-          <div>
-            <p class="section-label">PC + party storage</p>
-            <h2 id="storage-title">Pokemon collection</h2>
-          </div>
-          <div class="storage-totals" id="storage-totals"></div>
-        </div>
-
-        <div class="storage-toolbar" aria-label="Pokemon storage filters">
-          <select id="storage-player-select" aria-label="Choose storage player"></select>
-          <div class="segmented" id="storage-view-tabs">
-            <button class="tab active" data-storage-view="all">All</button>
-            <button class="tab" data-storage-view="party">Party</button>
-            <button class="tab" data-storage-view="pc">PC</button>
-            <button class="tab" data-storage-view="shiny">Shiny</button>
-          </div>
-          <select id="storage-sort" aria-label="Sort Pokemon">
-            <option value="level">Highest level</option>
-            <option value="ivTotal">Best IV total</option>
-            <option value="species">Species name</option>
-            <option value="box">Box order</option>
-          </select>
-          <input id="storage-search" type="search" placeholder="Search species, moves, ability" />
-        </div>
-
-        <div class="storage-feature-grid" id="storage-feature-grid"></div>
-        <section class="type-infographic" aria-labelledby="type-infographic-title">
-          <div class="panel-head infographic-head">
-            <div>
-              <p class="section-label">PC type infographics</p>
-              <h2 id="type-infographic-title">Collection balance by player</h2>
-            </div>
-            <p>Species type distribution across PC and party Pokemon</p>
-          </div>
-          <div class="type-card-grid" id="type-card-grid"></div>
-        </section>
-        <div class="storage-count" id="storage-count"></div>
-        <div class="pokemon-scroll-window">
-          <div class="pokemon-grid" id="pokemon-grid"></div>
-        </div>
-      </section>
     </main>
 
-    <script src="app.js?v=visual-refresh-1"></script>
+    <script src="app.js?v=trainer-terminal-1"></script>
   </body>
 </html>
