@@ -9,6 +9,7 @@ Run:
 ```bash
 npm run build:stats
 npm run build:storage
+npm run build:types
 npm run fetch:icons
 ```
 

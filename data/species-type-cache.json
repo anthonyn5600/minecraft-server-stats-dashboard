@@ -1,0 +1,2447 @@
+{
+  "abomasnow": {
+    "dex": 460,
+    "types": [
+      "grass",
+      "ice"
+    ],
+    "source": "pokeapi"
+  },
+  "abra": {
+    "dex": 63,
+    "types": [
+      "psychic"
+    ],
+    "source": "pokeapi"
+  },
+  "absol": {
+    "dex": 359,
+    "types": [
+      "dark"
+    ],
+    "source": "pokeapi"
+  },
+  "aerodactyl": {
+    "dex": 142,
+    "types": [
+      "rock",
+      "flying"
+    ],
+    "source": "pokeapi"
+  },
+  "aggron": {
+    "dex": 306,
+    "types": [
+      "steel",
+      "rock"
+    ],
+    "source": "pokeapi"
+  },
+  "altaria": {
+    "dex": 334,
+    "types": [
+      "dragon",
+      "flying"
+    ],
+    "source": "pokeapi"
+  },
+  "applin": {
+    "dex": 840,
+    "types": [
+      "grass",
+      "dragon"
+    ],
+    "source": "pokeapi"
+  },
+  "arboliva": {
+    "dex": 930,
+    "types": [
+      "grass",
+      "normal"
+    ],
+    "source": "pokeapi"
+  },
+  "archaludon": {
+    "dex": 1018,
+    "types": [
+      "steel",
+      "dragon"
+    ],
+    "source": "pokeapi"
+  },
+  "ariados": {
+    "dex": 168,
+    "types": [
+      "bug",
+      "poison"
+    ],
+    "source": "pokeapi"
+  },
+  "armarouge": {
+    "dex": 936,
+    "types": [
+      "fire",
+      "psychic"
+    ],
+    "source": "pokeapi"
+  },
+  "aron": {
+    "dex": 304,
+    "types": [
+      "steel",
+      "rock"
+    ],
+    "source": "pokeapi"
+  },
+  "articuno": {
+    "dex": 144,
+    "types": [
+      "ice",
+      "flying"
+    ],
+    "source": "pokeapi"
+  },
+  "audino": {
+    "dex": 531,
+    "types": [
+      "normal"
+    ],
+    "source": "pokeapi"
+  },
+  "azumarill": {
+    "dex": 184,
+    "types": [
+      "water",
+      "fairy"
+    ],
+    "source": "pokeapi"
+  },
+  "azurill": {
+    "dex": 298,
+    "types": [
+      "normal",
+      "fairy"
+    ],
+    "source": "pokeapi"
+  },
+  "bagon": {
+    "dex": 371,
+    "types": [
+      "dragon"
+    ],
+    "source": "pokeapi"
+  },
+  "banette": {
+    "dex": 354,
+    "types": [
+      "ghost"
+    ],
+    "source": "pokeapi"
+  },
+  "beedrill": {
+    "dex": 15,
+    "types": [
+      "bug",
+      "poison"
+    ],
+    "source": "pokeapi"
+  },
+  "beldum": {
+    "dex": 374,
+    "types": [
+      "steel",
+      "psychic"
+    ],
+    "source": "pokeapi"
+  },
+  "blastoise": {
+    "dex": 9,
+    "types": [
+      "water"
+    ],
+    "source": "pokeapi"
+  },
+  "blaziken": {
+    "dex": 257,
+    "types": [
+      "fire",
+      "fighting"
+    ],
+    "source": "pokeapi"
+  },
+  "blissey": {
+    "dex": 242,
+    "types": [
+      "normal"
+    ],
+    "source": "pokeapi"
+  },
+  "boltund": {
+    "dex": 836,
+    "types": [
+      "electric"
+    ],
+    "source": "pokeapi"
+  },
+  "bouffalant": {
+    "dex": 626,
+    "types": [
+      "normal"
+    ],
+    "source": "pokeapi"
+  },
+  "breloom": {
+    "dex": 286,
+    "types": [
+      "grass",
+      "fighting"
+    ],
+    "source": "pokeapi"
+  },
+  "buizel": {
+    "dex": 418,
+    "types": [
+      "water"
+    ],
+    "source": "pokeapi"
+  },
+  "bulbasaur": {
+    "dex": 1,
+    "types": [
+      "grass",
+      "poison"
+    ],
+    "source": "pokeapi"
+  },
+  "buneary": {
+    "dex": 427,
+    "types": [
+      "normal"
+    ],
+    "source": "pokeapi"
+  },
+  "burmy": {
+    "dex": 412,
+    "types": [
+      "bug"
+    ],
+    "source": "pokeapi"
+  },
+  "butterfree": {
+    "dex": 12,
+    "types": [
+      "bug",
+      "flying"
+    ],
+    "source": "pokeapi"
+  },
+  "cacnea": {
+    "dex": 331,
+    "types": [
+      "grass"
+    ],
+    "source": "pokeapi"
+  },
+  "cacturne": {
+    "dex": 332,
+    "types": [
+      "grass",
+      "dark"
+    ],
+    "source": "pokeapi"
+  },
+  "capsakid": {
+    "dex": 951,
+    "types": [
+      "grass"
+    ],
+    "source": "pokeapi"
+  },
+  "carkol": {
+    "dex": 838,
+    "types": [
+      "rock",
+      "fire"
+    ],
+    "source": "pokeapi"
+  },
+  "carracosta": {
+    "dex": 565,
+    "types": [
+      "water",
+      "rock"
+    ],
+    "source": "pokeapi"
+  },
+  "castform": {
+    "dex": 351,
+    "types": [
+      "normal"
+    ],
+    "source": "pokeapi"
+  },
+  "caterpie": {
+    "dex": 10,
+    "types": [
+      "bug"
+    ],
+    "source": "pokeapi"
+  },
+  "ceruledge": {
+    "dex": 937,
+    "types": [
+      "fire",
+      "ghost"
+    ],
+    "source": "pokeapi"
+  },
+  "cetoddle": {
+    "dex": 974,
+    "types": [
+      "ice"
+    ],
+    "source": "pokeapi"
+  },
+  "chansey": {
+    "dex": 113,
+    "types": [
+      "normal"
+    ],
+    "source": "pokeapi"
+  },
+  "charcadet": {
+    "dex": 935,
+    "types": [
+      "fire"
+    ],
+    "source": "pokeapi"
+  },
+  "charizard": {
+    "dex": 6,
+    "types": [
+      "fire",
+      "flying"
+    ],
+    "source": "pokeapi"
+  },
+  "charmander": {
+    "dex": 4,
+    "types": [
+      "fire"
+    ],
+    "source": "pokeapi"
+  },
+  "chespin": {
+    "dex": 650,
+    "types": [
+      "grass"
+    ],
+    "source": "pokeapi"
+  },
+  "chewtle": {
+    "dex": 833,
+    "types": [
+      "water"
+    ],
+    "source": "pokeapi"
+  },
+  "cinccino": {
+    "dex": 573,
+    "types": [
+      "normal"
+    ],
+    "source": "pokeapi"
+  },
+  "clauncher": {
+    "dex": 692,
+    "types": [
+      "water"
+    ],
+    "source": "pokeapi"
+  },
+  "clawitzer": {
+    "dex": 693,
+    "types": [
+      "water"
+    ],
+    "source": "pokeapi"
+  },
+  "claydol": {
+    "dex": 344,
+    "types": [
+      "ground",
+      "psychic"
+    ],
+    "source": "pokeapi"
+  },
+  "cloyster": {
+    "dex": 91,
+    "types": [
+      "water",
+      "ice"
+    ],
+    "source": "pokeapi"
+  },
+  "combee": {
+    "dex": 415,
+    "types": [
+      "bug",
+      "flying"
+    ],
+    "source": "pokeapi"
+  },
+  "combusken": {
+    "dex": 256,
+    "types": [
+      "fire",
+      "fighting"
+    ],
+    "source": "pokeapi"
+  },
+  "corviknight": {
+    "dex": 823,
+    "types": [
+      "flying",
+      "steel"
+    ],
+    "source": "pokeapi"
+  },
+  "corvisquire": {
+    "dex": 822,
+    "types": [
+      "flying"
+    ],
+    "source": "pokeapi"
+  },
+  "cosmoem": {
+    "dex": 790,
+    "types": [
+      "psychic"
+    ],
+    "source": "pokeapi"
+  },
+  "cubchoo": {
+    "dex": 613,
+    "types": [
+      "ice"
+    ],
+    "source": "pokeapi"
+  },
+  "cubone": {
+    "dex": 104,
+    "types": [
+      "ground"
+    ],
+    "source": "pokeapi"
+  },
+  "cyclizar": {
+    "dex": 967,
+    "types": [
+      "dragon",
+      "normal"
+    ],
+    "source": "pokeapi"
+  },
+  "cyndaquil": {
+    "dex": 155,
+    "types": [
+      "fire"
+    ],
+    "source": "pokeapi"
+  },
+  "dachsbun": {
+    "dex": 927,
+    "types": [
+      "fairy"
+    ],
+    "source": "pokeapi"
+  },
+  "darmanitan": {
+    "dex": 555,
+    "types": [
+      "fire"
+    ],
+    "source": "pokeapi"
+  },
+  "dartrix": {
+    "dex": 723,
+    "types": [
+      "grass",
+      "flying"
+    ],
+    "source": "pokeapi"
+  },
+  "darumaka": {
+    "dex": 554,
+    "types": [
+      "fire"
+    ],
+    "source": "pokeapi"
+  },
+  "decidueye": {
+    "dex": 724,
+    "types": [
+      "grass",
+      "ghost"
+    ],
+    "source": "pokeapi"
+  },
+  "deerling": {
+    "dex": 585,
+    "types": [
+      "normal",
+      "grass"
+    ],
+    "source": "pokeapi"
+  },
+  "delcatty": {
+    "dex": 301,
+    "types": [
+      "normal"
+    ],
+    "source": "pokeapi"
+  },
+  "dewpider": {
+    "dex": 751,
+    "types": [
+      "water",
+      "bug"
+    ],
+    "source": "pokeapi"
+  },
+  "dhelmise": {
+    "dex": 781,
+    "types": [
+      "ghost",
+      "grass"
+    ],
+    "source": "pokeapi"
+  },
+  "ditto": {
+    "dex": 132,
+    "types": [
+      "normal"
+    ],
+    "source": "pokeapi"
+  },
+  "dodrio": {
+    "dex": 85,
+    "types": [
+      "normal",
+      "flying"
+    ],
+    "source": "pokeapi"
+  },
+  "doublade": {
+    "dex": 680,
+    "types": [
+      "steel",
+      "ghost"
+    ],
+    "source": "pokeapi"
+  },
+  "dragonair": {
+    "dex": 148,
+    "types": [
+      "dragon"
+    ],
+    "source": "pokeapi"
+  },
+  "dratini": {
+    "dex": 147,
+    "types": [
+      "dragon"
+    ],
+    "source": "pokeapi"
+  },
+  "dreepy": {
+    "dex": 885,
+    "types": [
+      "dragon",
+      "ghost"
+    ],
+    "source": "pokeapi"
+  },
+  "drowzee": {
+    "dex": 96,
+    "types": [
+      "psychic"
+    ],
+    "source": "pokeapi"
+  },
+  "dubwool": {
+    "dex": 832,
+    "types": [
+      "normal"
+    ],
+    "source": "pokeapi"
+  },
+  "eelektross": {
+    "dex": 604,
+    "types": [
+      "electric"
+    ],
+    "source": "pokeapi"
+  },
+  "eevee": {
+    "dex": 133,
+    "types": [
+      "normal"
+    ],
+    "source": "pokeapi"
+  },
+  "eiscue": {
+    "dex": 875,
+    "types": [
+      "ice"
+    ],
+    "source": "pokeapi"
+  },
+  "ekans": {
+    "dex": 23,
+    "types": [
+      "poison"
+    ],
+    "source": "pokeapi"
+  },
+  "electabuzz": {
+    "dex": 125,
+    "types": [
+      "electric"
+    ],
+    "source": "pokeapi"
+  },
+  "electrike": {
+    "dex": 309,
+    "types": [
+      "electric"
+    ],
+    "source": "pokeapi"
+  },
+  "elekid": {
+    "dex": 239,
+    "types": [
+      "electric"
+    ],
+    "source": "pokeapi"
+  },
+  "emolga": {
+    "dex": 587,
+    "types": [
+      "electric",
+      "flying"
+    ],
+    "source": "pokeapi"
+  },
+  "espathra": {
+    "dex": 956,
+    "types": [
+      "psychic"
+    ],
+    "source": "pokeapi"
+  },
+  "espeon": {
+    "dex": 196,
+    "types": [
+      "psychic"
+    ],
+    "source": "pokeapi"
+  },
+  "espurr": {
+    "dex": 677,
+    "types": [
+      "psychic"
+    ],
+    "source": "pokeapi"
+  },
+  "fidough": {
+    "dex": 926,
+    "types": [
+      "fairy"
+    ],
+    "source": "pokeapi"
+  },
+  "finizen": {
+    "dex": 963,
+    "types": [
+      "water"
+    ],
+    "source": "pokeapi"
+  },
+  "flaaffy": {
+    "dex": 180,
+    "types": [
+      "electric"
+    ],
+    "source": "pokeapi"
+  },
+  "flabebe": {
+    "dex": 669,
+    "types": [
+      "fairy"
+    ],
+    "source": "pokeapi"
+  },
+  "flapple": {
+    "dex": 841,
+    "types": [
+      "grass",
+      "dragon"
+    ],
+    "source": "pokeapi"
+  },
+  "flareon": {
+    "dex": 136,
+    "types": [
+      "fire"
+    ],
+    "source": "pokeapi"
+  },
+  "floette": {
+    "dex": 670,
+    "types": [
+      "fairy"
+    ],
+    "source": "pokeapi"
+  },
+  "fluttermane": {
+    "dex": 987,
+    "types": [
+      "ghost",
+      "fairy"
+    ],
+    "source": "pokeapi"
+  },
+  "foongus": {
+    "dex": 590,
+    "types": [
+      "grass",
+      "poison"
+    ],
+    "source": "pokeapi"
+  },
+  "frillish": {
+    "dex": 592,
+    "types": [
+      "water",
+      "ghost"
+    ],
+    "source": "pokeapi"
+  },
+  "fuecoco": {
+    "dex": 909,
+    "types": [
+      "fire"
+    ],
+    "source": "pokeapi"
+  },
+  "furfrou": {
+    "dex": 676,
+    "types": [
+      "normal"
+    ],
+    "source": "pokeapi"
+  },
+  "gallade": {
+    "dex": 475,
+    "types": [
+      "psychic",
+      "fighting"
+    ],
+    "source": "pokeapi"
+  },
+  "garbodor": {
+    "dex": 569,
+    "types": [
+      "poison"
+    ],
+    "source": "pokeapi"
+  },
+  "garchomp": {
+    "dex": 445,
+    "types": [
+      "dragon",
+      "ground"
+    ],
+    "source": "pokeapi"
+  },
+  "gardevoir": {
+    "dex": 282,
+    "types": [
+      "psychic",
+      "fairy"
+    ],
+    "source": "pokeapi"
+  },
+  "garganacl": {
+    "dex": 934,
+    "types": [
+      "rock"
+    ],
+    "source": "pokeapi"
+  },
+  "geodude": {
+    "dex": 74,
+    "types": [
+      "rock",
+      "ground"
+    ],
+    "source": "pokeapi"
+  },
+  "gholdengo": {
+    "dex": 1000,
+    "types": [
+      "steel",
+      "ghost"
+    ],
+    "source": "pokeapi"
+  },
+  "gimmighoul": {
+    "dex": 999,
+    "types": [
+      "ghost"
+    ],
+    "source": "pokeapi"
+  },
+  "glameow": {
+    "dex": 431,
+    "types": [
+      "normal"
+    ],
+    "source": "pokeapi"
+  },
+  "gogoat": {
+    "dex": 673,
+    "types": [
+      "grass"
+    ],
+    "source": "pokeapi"
+  },
+  "goldeen": {
+    "dex": 118,
+    "types": [
+      "water"
+    ],
+    "source": "pokeapi"
+  },
+  "golduck": {
+    "dex": 55,
+    "types": [
+      "water"
+    ],
+    "source": "pokeapi"
+  },
+  "golem": {
+    "dex": 76,
+    "types": [
+      "rock",
+      "ground"
+    ],
+    "source": "pokeapi"
+  },
+  "golett": {
+    "dex": 622,
+    "types": [
+      "ground",
+      "ghost"
+    ],
+    "source": "pokeapi"
+  },
+  "golisopod": {
+    "dex": 768,
+    "types": [
+      "bug",
+      "water"
+    ],
+    "source": "pokeapi"
+  },
+  "goodra": {
+    "dex": 706,
+    "types": [
+      "dragon"
+    ],
+    "source": "pokeapi"
+  },
+  "granbull": {
+    "dex": 210,
+    "types": [
+      "fairy"
+    ],
+    "source": "pokeapi"
+  },
+  "greninja": {
+    "dex": 658,
+    "types": [
+      "water",
+      "dark"
+    ],
+    "source": "pokeapi"
+  },
+  "grimer": {
+    "dex": 88,
+    "types": [
+      "poison"
+    ],
+    "source": "pokeapi"
+  },
+  "grookey": {
+    "dex": 810,
+    "types": [
+      "grass"
+    ],
+    "source": "pokeapi"
+  },
+  "growlithe": {
+    "dex": 58,
+    "types": [
+      "fire"
+    ],
+    "source": "pokeapi"
+  },
+  "gyarados": {
+    "dex": 130,
+    "types": [
+      "water",
+      "flying"
+    ],
+    "source": "pokeapi"
+  },
+  "happiny": {
+    "dex": 440,
+    "types": [
+      "normal"
+    ],
+    "source": "pokeapi"
+  },
+  "haunter": {
+    "dex": 93,
+    "types": [
+      "ghost",
+      "poison"
+    ],
+    "source": "pokeapi"
+  },
+  "heracross": {
+    "dex": 214,
+    "types": [
+      "bug",
+      "fighting"
+    ],
+    "source": "pokeapi"
+  },
+  "herdier": {
+    "dex": 507,
+    "types": [
+      "normal"
+    ],
+    "source": "pokeapi"
+  },
+  "honedge": {
+    "dex": 679,
+    "types": [
+      "steel",
+      "ghost"
+    ],
+    "source": "pokeapi"
+  },
+  "hoppip": {
+    "dex": 187,
+    "types": [
+      "grass",
+      "flying"
+    ],
+    "source": "pokeapi"
+  },
+  "huntail": {
+    "dex": 367,
+    "types": [
+      "water"
+    ],
+    "source": "pokeapi"
+  },
+  "hypno": {
+    "dex": 97,
+    "types": [
+      "psychic"
+    ],
+    "source": "pokeapi"
+  },
+  "igglybuff": {
+    "dex": 174,
+    "types": [
+      "normal",
+      "fairy"
+    ],
+    "source": "pokeapi"
+  },
+  "inkay": {
+    "dex": 686,
+    "types": [
+      "dark",
+      "psychic"
+    ],
+    "source": "pokeapi"
+  },
+  "ironhands": {
+    "dex": 992,
+    "types": [
+      "fighting",
+      "electric"
+    ],
+    "source": "pokeapi"
+  },
+  "ironthorns": {
+    "dex": 995,
+    "types": [
+      "rock",
+      "electric"
+    ],
+    "source": "pokeapi"
+  },
+  "irontreads": {
+    "dex": 990,
+    "types": [
+      "ground",
+      "steel"
+    ],
+    "source": "pokeapi"
+  },
+  "jellicent": {
+    "dex": 593,
+    "types": [
+      "water",
+      "ghost"
+    ],
+    "source": "pokeapi"
+  },
+  "jolteon": {
+    "dex": 135,
+    "types": [
+      "electric"
+    ],
+    "source": "pokeapi"
+  },
+  "kartana": {
+    "dex": 798,
+    "types": [
+      "grass",
+      "steel"
+    ],
+    "source": "pokeapi"
+  },
+  "kilowattrel": {
+    "dex": 941,
+    "types": [
+      "electric",
+      "flying"
+    ],
+    "source": "pokeapi"
+  },
+  "kingambit": {
+    "dex": 983,
+    "types": [
+      "dark",
+      "steel"
+    ],
+    "source": "pokeapi"
+  },
+  "kirlia": {
+    "dex": 281,
+    "types": [
+      "psychic",
+      "fairy"
+    ],
+    "source": "pokeapi"
+  },
+  "klefki": {
+    "dex": 707,
+    "types": [
+      "steel",
+      "fairy"
+    ],
+    "source": "pokeapi"
+  },
+  "kommoo": {
+    "dex": 784,
+    "types": [
+      "dragon",
+      "fighting"
+    ],
+    "source": "pokeapi"
+  },
+  "krabby": {
+    "dex": 98,
+    "types": [
+      "water"
+    ],
+    "source": "pokeapi"
+  },
+  "lairon": {
+    "dex": 305,
+    "types": [
+      "steel",
+      "rock"
+    ],
+    "source": "pokeapi"
+  },
+  "lanturn": {
+    "dex": 171,
+    "types": [
+      "water",
+      "electric"
+    ],
+    "source": "pokeapi"
+  },
+  "lapras": {
+    "dex": 131,
+    "types": [
+      "water",
+      "ice"
+    ],
+    "source": "pokeapi"
+  },
+  "larvesta": {
+    "dex": 636,
+    "types": [
+      "bug",
+      "fire"
+    ],
+    "source": "pokeapi"
+  },
+  "larvitar": {
+    "dex": 246,
+    "types": [
+      "rock",
+      "ground"
+    ],
+    "source": "pokeapi"
+  },
+  "leafeon": {
+    "dex": 470,
+    "types": [
+      "grass"
+    ],
+    "source": "pokeapi"
+  },
+  "lickilicky": {
+    "dex": 463,
+    "types": [
+      "normal"
+    ],
+    "source": "pokeapi"
+  },
+  "lickitung": {
+    "dex": 108,
+    "types": [
+      "normal"
+    ],
+    "source": "pokeapi"
+  },
+  "lillipup": {
+    "dex": 506,
+    "types": [
+      "normal"
+    ],
+    "source": "pokeapi"
+  },
+  "lucario": {
+    "dex": 448,
+    "types": [
+      "fighting",
+      "steel"
+    ],
+    "source": "pokeapi"
+  },
+  "lurantis": {
+    "dex": 754,
+    "types": [
+      "grass"
+    ],
+    "source": "pokeapi"
+  },
+  "lycanroc": {
+    "dex": 745,
+    "types": [
+      "rock"
+    ],
+    "source": "pokeapi"
+  },
+  "mabosstiff": {
+    "dex": 943,
+    "types": [
+      "dark"
+    ],
+    "source": "pokeapi"
+  },
+  "magikarp": {
+    "dex": 129,
+    "types": [
+      "water"
+    ],
+    "source": "pokeapi"
+  },
+  "magmar": {
+    "dex": 126,
+    "types": [
+      "fire"
+    ],
+    "source": "pokeapi"
+  },
+  "magneton": {
+    "dex": 82,
+    "types": [
+      "electric",
+      "steel"
+    ],
+    "source": "pokeapi"
+  },
+  "makuhita": {
+    "dex": 296,
+    "types": [
+      "fighting"
+    ],
+    "source": "pokeapi"
+  },
+  "malamar": {
+    "dex": 687,
+    "types": [
+      "dark",
+      "psychic"
+    ],
+    "source": "pokeapi"
+  },
+  "manectric": {
+    "dex": 310,
+    "types": [
+      "electric"
+    ],
+    "source": "pokeapi"
+  },
+  "mantyke": {
+    "dex": 458,
+    "types": [
+      "water",
+      "flying"
+    ],
+    "source": "pokeapi"
+  },
+  "maractus": {
+    "dex": 556,
+    "types": [
+      "grass"
+    ],
+    "source": "pokeapi"
+  },
+  "mareep": {
+    "dex": 179,
+    "types": [
+      "electric"
+    ],
+    "source": "pokeapi"
+  },
+  "marill": {
+    "dex": 183,
+    "types": [
+      "water",
+      "fairy"
+    ],
+    "source": "pokeapi"
+  },
+  "marowak": {
+    "dex": 105,
+    "types": [
+      "ground"
+    ],
+    "source": "pokeapi"
+  },
+  "marshtomp": {
+    "dex": 259,
+    "types": [
+      "water",
+      "ground"
+    ],
+    "source": "pokeapi"
+  },
+  "mawile": {
+    "dex": 303,
+    "types": [
+      "steel",
+      "fairy"
+    ],
+    "source": "pokeapi"
+  },
+  "medicham": {
+    "dex": 308,
+    "types": [
+      "fighting",
+      "psychic"
+    ],
+    "source": "pokeapi"
+  },
+  "meditite": {
+    "dex": 307,
+    "types": [
+      "fighting",
+      "psychic"
+    ],
+    "source": "pokeapi"
+  },
+  "meloetta": {
+    "dex": 648,
+    "types": [
+      "normal",
+      "psychic"
+    ],
+    "source": "pokeapi"
+  },
+  "meowstic": {
+    "dex": 678,
+    "types": [
+      "psychic"
+    ],
+    "source": "pokeapi"
+  },
+  "meowth": {
+    "dex": 52,
+    "types": [
+      "normal"
+    ],
+    "source": "pokeapi"
+  },
+  "metagross": {
+    "dex": 376,
+    "types": [
+      "steel",
+      "psychic"
+    ],
+    "source": "pokeapi"
+  },
+  "mewtwo": {
+    "dex": 150,
+    "types": [
+      "psychic"
+    ],
+    "source": "pokeapi"
+  },
+  "mienfoo": {
+    "dex": 619,
+    "types": [
+      "fighting"
+    ],
+    "source": "pokeapi"
+  },
+  "miltank": {
+    "dex": 241,
+    "types": [
+      "normal"
+    ],
+    "source": "pokeapi"
+  },
+  "mimejr": {
+    "dex": 439,
+    "types": [
+      "psychic",
+      "fairy"
+    ],
+    "source": "pokeapi"
+  },
+  "mimikyu": {
+    "dex": 778,
+    "types": [
+      "ghost",
+      "fairy"
+    ],
+    "source": "pokeapi"
+  },
+  "minccino": {
+    "dex": 572,
+    "types": [
+      "normal"
+    ],
+    "source": "pokeapi"
+  },
+  "minior": {
+    "dex": 774,
+    "types": [
+      "rock",
+      "flying"
+    ],
+    "source": "pokeapi"
+  },
+  "minun": {
+    "dex": 312,
+    "types": [
+      "electric"
+    ],
+    "source": "pokeapi"
+  },
+  "morelull": {
+    "dex": 755,
+    "types": [
+      "grass",
+      "fairy"
+    ],
+    "source": "pokeapi"
+  },
+  "mrmime": {
+    "dex": 122,
+    "types": [
+      "psychic",
+      "fairy"
+    ],
+    "source": "pokeapi"
+  },
+  "mudsdale": {
+    "dex": 750,
+    "types": [
+      "ground"
+    ],
+    "source": "pokeapi"
+  },
+  "munchlax": {
+    "dex": 446,
+    "types": [
+      "normal"
+    ],
+    "source": "pokeapi"
+  },
+  "munna": {
+    "dex": 517,
+    "types": [
+      "psychic"
+    ],
+    "source": "pokeapi"
+  },
+  "murkrow": {
+    "dex": 198,
+    "types": [
+      "dark",
+      "flying"
+    ],
+    "source": "pokeapi"
+  },
+  "musharna": {
+    "dex": 518,
+    "types": [
+      "psychic"
+    ],
+    "source": "pokeapi"
+  },
+  "nacli": {
+    "dex": 932,
+    "types": [
+      "rock"
+    ],
+    "source": "pokeapi"
+  },
+  "naclstack": {
+    "dex": 933,
+    "types": [
+      "rock"
+    ],
+    "source": "pokeapi"
+  },
+  "naganadel": {
+    "dex": 804,
+    "types": [
+      "poison",
+      "dragon"
+    ],
+    "source": "pokeapi"
+  },
+  "natu": {
+    "dex": 177,
+    "types": [
+      "psychic",
+      "flying"
+    ],
+    "source": "pokeapi"
+  },
+  "necrozma": {
+    "dex": 800,
+    "types": [
+      "psychic"
+    ],
+    "source": "pokeapi"
+  },
+  "nickit": {
+    "dex": 827,
+    "types": [
+      "dark"
+    ],
+    "source": "pokeapi"
+  },
+  "nidorina": {
+    "dex": 30,
+    "types": [
+      "poison"
+    ],
+    "source": "pokeapi"
+  },
+  "nihilego": {
+    "dex": 793,
+    "types": [
+      "rock",
+      "poison"
+    ],
+    "source": "pokeapi"
+  },
+  "ninjask": {
+    "dex": 291,
+    "types": [
+      "bug",
+      "flying"
+    ],
+    "source": "pokeapi"
+  },
+  "oddish": {
+    "dex": 43,
+    "types": [
+      "grass",
+      "poison"
+    ],
+    "source": "pokeapi"
+  },
+  "oinkologne": {
+    "dex": 916,
+    "types": [
+      "normal"
+    ],
+    "source": "pokeapi"
+  },
+  "onix": {
+    "dex": 95,
+    "types": [
+      "rock",
+      "ground"
+    ],
+    "source": "pokeapi"
+  },
+  "oricorio": {
+    "dex": 741,
+    "types": [
+      "fire",
+      "flying"
+    ],
+    "source": "pokeapi"
+  },
+  "pachirisu": {
+    "dex": 417,
+    "types": [
+      "electric"
+    ],
+    "source": "pokeapi"
+  },
+  "pancham": {
+    "dex": 674,
+    "types": [
+      "fighting"
+    ],
+    "source": "pokeapi"
+  },
+  "pawmo": {
+    "dex": 922,
+    "types": [
+      "electric",
+      "fighting"
+    ],
+    "source": "pokeapi"
+  },
+  "pecharunt": {
+    "dex": 1025,
+    "types": [
+      "poison",
+      "ghost"
+    ],
+    "source": "pokeapi"
+  },
+  "perrserker": {
+    "dex": 863,
+    "types": [
+      "steel"
+    ],
+    "source": "pokeapi"
+  },
+  "persian": {
+    "dex": 53,
+    "types": [
+      "normal"
+    ],
+    "source": "pokeapi"
+  },
+  "phantump": {
+    "dex": 708,
+    "types": [
+      "ghost",
+      "grass"
+    ],
+    "source": "pokeapi"
+  },
+  "pichu": {
+    "dex": 172,
+    "types": [
+      "electric"
+    ],
+    "source": "pokeapi"
+  },
+  "pidgeotto": {
+    "dex": 17,
+    "types": [
+      "normal",
+      "flying"
+    ],
+    "source": "pokeapi"
+  },
+  "pidgey": {
+    "dex": 16,
+    "types": [
+      "normal",
+      "flying"
+    ],
+    "source": "pokeapi"
+  },
+  "pidove": {
+    "dex": 519,
+    "types": [
+      "normal",
+      "flying"
+    ],
+    "source": "pokeapi"
+  },
+  "pignite": {
+    "dex": 499,
+    "types": [
+      "fire",
+      "fighting"
+    ],
+    "source": "pokeapi"
+  },
+  "pikachu": {
+    "dex": 25,
+    "types": [
+      "electric"
+    ],
+    "source": "pokeapi"
+  },
+  "pinsir": {
+    "dex": 127,
+    "types": [
+      "bug"
+    ],
+    "source": "pokeapi"
+  },
+  "piplup": {
+    "dex": 393,
+    "types": [
+      "water"
+    ],
+    "source": "pokeapi"
+  },
+  "poliwag": {
+    "dex": 60,
+    "types": [
+      "water"
+    ],
+    "source": "pokeapi"
+  },
+  "poliwhirl": {
+    "dex": 61,
+    "types": [
+      "water"
+    ],
+    "source": "pokeapi"
+  },
+  "polteageist": {
+    "dex": 855,
+    "types": [
+      "ghost"
+    ],
+    "source": "pokeapi"
+  },
+  "ponyta": {
+    "dex": 77,
+    "types": [
+      "fire"
+    ],
+    "source": "pokeapi"
+  },
+  "prinplup": {
+    "dex": 394,
+    "types": [
+      "water"
+    ],
+    "source": "pokeapi"
+  },
+  "purrloin": {
+    "dex": 509,
+    "types": [
+      "dark"
+    ],
+    "source": "pokeapi"
+  },
+  "purugly": {
+    "dex": 432,
+    "types": [
+      "normal"
+    ],
+    "source": "pokeapi"
+  },
+  "pyroar": {
+    "dex": 668,
+    "types": [
+      "fire",
+      "normal"
+    ],
+    "source": "pokeapi"
+  },
+  "quilava": {
+    "dex": 156,
+    "types": [
+      "fire"
+    ],
+    "source": "pokeapi"
+  },
+  "qwilfish": {
+    "dex": 211,
+    "types": [
+      "water",
+      "poison"
+    ],
+    "source": "pokeapi"
+  },
+  "raboot": {
+    "dex": 814,
+    "types": [
+      "fire"
+    ],
+    "source": "pokeapi"
+  },
+  "ragingbolt": {
+    "dex": 1021,
+    "types": [
+      "electric",
+      "dragon"
+    ],
+    "source": "pokeapi"
+  },
+  "raichu": {
+    "dex": 26,
+    "types": [
+      "electric"
+    ],
+    "source": "pokeapi"
+  },
+  "rapidash": {
+    "dex": 78,
+    "types": [
+      "fire"
+    ],
+    "source": "pokeapi"
+  },
+  "rayquaza": {
+    "dex": 384,
+    "types": [
+      "dragon",
+      "flying"
+    ],
+    "source": "pokeapi"
+  },
+  "rhyhorn": {
+    "dex": 111,
+    "types": [
+      "ground",
+      "rock"
+    ],
+    "source": "pokeapi"
+  },
+  "riolu": {
+    "dex": 447,
+    "types": [
+      "fighting"
+    ],
+    "source": "pokeapi"
+  },
+  "rowlet": {
+    "dex": 722,
+    "types": [
+      "grass",
+      "flying"
+    ],
+    "source": "pokeapi"
+  },
+  "sableye": {
+    "dex": 302,
+    "types": [
+      "dark",
+      "ghost"
+    ],
+    "source": "pokeapi"
+  },
+  "samurott": {
+    "dex": 503,
+    "types": [
+      "water"
+    ],
+    "source": "pokeapi"
+  },
+  "sandshrew": {
+    "dex": 27,
+    "types": [
+      "ground"
+    ],
+    "source": "pokeapi"
+  },
+  "sandslash": {
+    "dex": 28,
+    "types": [
+      "ground"
+    ],
+    "source": "pokeapi"
+  },
+  "sandyshocks": {
+    "dex": 989,
+    "types": [
+      "electric",
+      "ground"
+    ],
+    "source": "pokeapi"
+  },
+  "sawsbuck": {
+    "dex": 586,
+    "types": [
+      "normal",
+      "grass"
+    ],
+    "source": "pokeapi"
+  },
+  "scorbunny": {
+    "dex": 813,
+    "types": [
+      "fire"
+    ],
+    "source": "pokeapi"
+  },
+  "scrafty": {
+    "dex": 560,
+    "types": [
+      "dark",
+      "fighting"
+    ],
+    "source": "pokeapi"
+  },
+  "scraggy": {
+    "dex": 559,
+    "types": [
+      "dark",
+      "fighting"
+    ],
+    "source": "pokeapi"
+  },
+  "sentret": {
+    "dex": 161,
+    "types": [
+      "normal"
+    ],
+    "source": "pokeapi"
+  },
+  "serperior": {
+    "dex": 497,
+    "types": [
+      "grass"
+    ],
+    "source": "pokeapi"
+  },
+  "shedinja": {
+    "dex": 292,
+    "types": [
+      "bug",
+      "ghost"
+    ],
+    "source": "pokeapi"
+  },
+  "shellder": {
+    "dex": 90,
+    "types": [
+      "water"
+    ],
+    "source": "pokeapi"
+  },
+  "shinx": {
+    "dex": 403,
+    "types": [
+      "electric"
+    ],
+    "source": "pokeapi"
+  },
+  "shuppet": {
+    "dex": 353,
+    "types": [
+      "ghost"
+    ],
+    "source": "pokeapi"
+  },
+  "sigilyph": {
+    "dex": 561,
+    "types": [
+      "psychic",
+      "flying"
+    ],
+    "source": "pokeapi"
+  },
+  "silicobra": {
+    "dex": 843,
+    "types": [
+      "ground"
+    ],
+    "source": "pokeapi"
+  },
+  "silvally": {
+    "dex": 773,
+    "types": [
+      "normal"
+    ],
+    "source": "pokeapi"
+  },
+  "simisear": {
+    "dex": 514,
+    "types": [
+      "fire"
+    ],
+    "source": "pokeapi"
+  },
+  "sinistea": {
+    "dex": 854,
+    "types": [
+      "ghost"
+    ],
+    "source": "pokeapi"
+  },
+  "sizzlipede": {
+    "dex": 850,
+    "types": [
+      "fire",
+      "bug"
+    ],
+    "source": "pokeapi"
+  },
+  "skarmory": {
+    "dex": 227,
+    "types": [
+      "steel",
+      "flying"
+    ],
+    "source": "pokeapi"
+  },
+  "skitty": {
+    "dex": 300,
+    "types": [
+      "normal"
+    ],
+    "source": "pokeapi"
+  },
+  "slugma": {
+    "dex": 218,
+    "types": [
+      "fire"
+    ],
+    "source": "pokeapi"
+  },
+  "smeargle": {
+    "dex": 235,
+    "types": [
+      "normal"
+    ],
+    "source": "pokeapi"
+  },
+  "sneasel": {
+    "dex": 215,
+    "types": [
+      "dark",
+      "ice"
+    ],
+    "source": "pokeapi"
+  },
+  "snom": {
+    "dex": 872,
+    "types": [
+      "ice",
+      "bug"
+    ],
+    "source": "pokeapi"
+  },
+  "solrock": {
+    "dex": 338,
+    "types": [
+      "rock",
+      "psychic"
+    ],
+    "source": "pokeapi"
+  },
+  "spidops": {
+    "dex": 918,
+    "types": [
+      "bug"
+    ],
+    "source": "pokeapi"
+  },
+  "sprigatito": {
+    "dex": 906,
+    "types": [
+      "grass"
+    ],
+    "source": "pokeapi"
+  },
+  "squawkabilly": {
+    "dex": 931,
+    "types": [
+      "normal",
+      "flying"
+    ],
+    "source": "pokeapi"
+  },
+  "squirtle": {
+    "dex": 7,
+    "types": [
+      "water"
+    ],
+    "source": "pokeapi"
+  },
+  "starly": {
+    "dex": 396,
+    "types": [
+      "normal",
+      "flying"
+    ],
+    "source": "pokeapi"
+  },
+  "steelix": {
+    "dex": 208,
+    "types": [
+      "steel",
+      "ground"
+    ],
+    "source": "pokeapi"
+  },
+  "swablu": {
+    "dex": 333,
+    "types": [
+      "normal",
+      "flying"
+    ],
+    "source": "pokeapi"
+  },
+  "swadloon": {
+    "dex": 541,
+    "types": [
+      "bug",
+      "grass"
+    ],
+    "source": "pokeapi"
+  },
+  "swellow": {
+    "dex": 277,
+    "types": [
+      "normal",
+      "flying"
+    ],
+    "source": "pokeapi"
+  },
+  "swoobat": {
+    "dex": 528,
+    "types": [
+      "psychic",
+      "flying"
+    ],
+    "source": "pokeapi"
+  },
+  "sylveon": {
+    "dex": 700,
+    "types": [
+      "fairy"
+    ],
+    "source": "pokeapi"
+  },
+  "tadbulb": {
+    "dex": 938,
+    "types": [
+      "electric"
+    ],
+    "source": "pokeapi"
+  },
+  "taillow": {
+    "dex": 276,
+    "types": [
+      "normal",
+      "flying"
+    ],
+    "source": "pokeapi"
+  },
+  "tandemaus": {
+    "dex": 924,
+    "types": [
+      "normal"
+    ],
+    "source": "pokeapi"
+  },
+  "tauros": {
+    "dex": 128,
+    "types": [
+      "normal"
+    ],
+    "source": "pokeapi"
+  },
+  "teddiursa": {
+    "dex": 216,
+    "types": [
+      "normal"
+    ],
+    "source": "pokeapi"
+  },
+  "tepig": {
+    "dex": 498,
+    "types": [
+      "fire"
+    ],
+    "source": "pokeapi"
+  },
+  "terapagos": {
+    "dex": 1024,
+    "types": [
+      "normal"
+    ],
+    "source": "pokeapi"
+  },
+  "thievul": {
+    "dex": 828,
+    "types": [
+      "dark"
+    ],
+    "source": "pokeapi"
+  },
+  "throh": {
+    "dex": 538,
+    "types": [
+      "fighting"
+    ],
+    "source": "pokeapi"
+  },
+  "timburr": {
+    "dex": 532,
+    "types": [
+      "fighting"
+    ],
+    "source": "pokeapi"
+  },
+  "tinkatink": {
+    "dex": 957,
+    "types": [
+      "fairy",
+      "steel"
+    ],
+    "source": "pokeapi"
+  },
+  "tinkaton": {
+    "dex": 959,
+    "types": [
+      "fairy",
+      "steel"
+    ],
+    "source": "pokeapi"
+  },
+  "toedscruel": {
+    "dex": 949,
+    "types": [
+      "ground",
+      "grass"
+    ],
+    "source": "pokeapi"
+  },
+  "togedemaru": {
+    "dex": 777,
+    "types": [
+      "electric",
+      "steel"
+    ],
+    "source": "pokeapi"
+  },
+  "togepi": {
+    "dex": 175,
+    "types": [
+      "fairy"
+    ],
+    "source": "pokeapi"
+  },
+  "torkoal": {
+    "dex": 324,
+    "types": [
+      "fire"
+    ],
+    "source": "pokeapi"
+  },
+  "tornadus": {
+    "dex": 641,
+    "types": [
+      "flying"
+    ],
+    "source": "pokeapi"
+  },
+  "torterra": {
+    "dex": 389,
+    "types": [
+      "grass",
+      "ground"
+    ],
+    "source": "pokeapi"
+  },
+  "totodile": {
+    "dex": 158,
+    "types": [
+      "water"
+    ],
+    "source": "pokeapi"
+  },
+  "toucannon": {
+    "dex": 733,
+    "types": [
+      "normal",
+      "flying"
+    ],
+    "source": "pokeapi"
+  },
+  "toxapex": {
+    "dex": 748,
+    "types": [
+      "poison",
+      "water"
+    ],
+    "source": "pokeapi"
+  },
+  "trubbish": {
+    "dex": 568,
+    "types": [
+      "poison"
+    ],
+    "source": "pokeapi"
+  },
+  "trumbeak": {
+    "dex": 732,
+    "types": [
+      "normal",
+      "flying"
+    ],
+    "source": "pokeapi"
+  },
+  "turtwig": {
+    "dex": 387,
+    "types": [
+      "grass"
+    ],
+    "source": "pokeapi"
+  },
+  "tynamo": {
+    "dex": 602,
+    "types": [
+      "electric"
+    ],
+    "source": "pokeapi"
+  },
+  "typenull": {
+    "dex": 772,
+    "types": [
+      "normal"
+    ],
+    "source": "pokeapi"
+  },
+  "umbreon": {
+    "dex": 197,
+    "types": [
+      "dark"
+    ],
+    "source": "pokeapi"
+  },
+  "unown": {
+    "dex": 201,
+    "types": [
+      "psychic"
+    ],
+    "source": "pokeapi"
+  },
+  "varoom": {
+    "dex": 965,
+    "types": [
+      "steel",
+      "poison"
+    ],
+    "source": "pokeapi"
+  },
+  "venipede": {
+    "dex": 543,
+    "types": [
+      "bug",
+      "poison"
+    ],
+    "source": "pokeapi"
+  },
+  "venonat": {
+    "dex": 48,
+    "types": [
+      "bug",
+      "poison"
+    ],
+    "source": "pokeapi"
+  },
+  "virizion": {
+    "dex": 640,
+    "types": [
+      "grass",
+      "fighting"
+    ],
+    "source": "pokeapi"
+  },
+  "vivillon": {
+    "dex": 666,
+    "types": [
+      "bug",
+      "flying"
+    ],
+    "source": "pokeapi"
+  },
+  "voltorb": {
+    "dex": 100,
+    "types": [
+      "electric"
+    ],
+    "source": "pokeapi"
+  },
+  "vullaby": {
+    "dex": 629,
+    "types": [
+      "dark",
+      "flying"
+    ],
+    "source": "pokeapi"
+  },
+  "vulpix": {
+    "dex": 37,
+    "types": [
+      "fire"
+    ],
+    "source": "pokeapi"
+  },
+  "wailmer": {
+    "dex": 320,
+    "types": [
+      "water"
+    ],
+    "source": "pokeapi"
+  },
+  "wartortle": {
+    "dex": 8,
+    "types": [
+      "water"
+    ],
+    "source": "pokeapi"
+  },
+  "weavile": {
+    "dex": 461,
+    "types": [
+      "dark",
+      "ice"
+    ],
+    "source": "pokeapi"
+  },
+  "wiglett": {
+    "dex": 960,
+    "types": [
+      "water"
+    ],
+    "source": "pokeapi"
+  },
+  "wimpod": {
+    "dex": 767,
+    "types": [
+      "bug",
+      "water"
+    ],
+    "source": "pokeapi"
+  },
+  "wishiwashi": {
+    "dex": 746,
+    "types": [
+      "water"
+    ],
+    "source": "pokeapi"
+  },
+  "wooloo": {
+    "dex": 831,
+    "types": [
+      "normal"
+    ],
+    "source": "pokeapi"
+  },
+  "wormadam": {
+    "dex": 413,
+    "types": [
+      "bug",
+      "grass"
+    ],
+    "source": "pokeapi"
+  },
+  "wynaut": {
+    "dex": 360,
+    "types": [
+      "psychic"
+    ],
+    "source": "pokeapi"
+  },
+  "xurkitree": {
+    "dex": 796,
+    "types": [
+      "electric"
+    ],
+    "source": "pokeapi"
+  },
+  "yamper": {
+    "dex": 835,
+    "types": [
+      "electric"
+    ],
+    "source": "pokeapi"
+  },
+  "zangoose": {
+    "dex": 335,
+    "types": [
+      "normal"
+    ],
+    "source": "pokeapi"
+  },
+  "zapdos": {
+    "dex": 145,
+    "types": [
+      "electric",
+      "flying"
+    ],
+    "source": "pokeapi"
+  },
+  "zigzagoon": {
+    "dex": 263,
+    "types": [
+      "normal"
+    ],
+    "source": "pokeapi"
+  },
+  "zoroark": {
+    "dex": 571,
+    "types": [
+      "dark"
+    ],
+    "source": "pokeapi"
+  },
+  "zorua": {
+    "dex": 570,
+    "types": [
+      "dark"
+    ],
+    "source": "pokeapi"
+  }
+}

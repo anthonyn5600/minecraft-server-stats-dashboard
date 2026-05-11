@@ -6,6 +6,7 @@
   "scripts": {
     "build:stats": "node scripts/build-stats-data.mjs",
     "build:storage": "node scripts/build-pokemon-storage.mjs",
+    "build:types": "node scripts/build-pokemon-types.mjs",
     "fetch:icons": "node scripts/fetch-pokemon-icons.mjs",
     "serve": "node scripts/serve.mjs"
   },

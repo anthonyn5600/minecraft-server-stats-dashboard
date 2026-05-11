@@ -31,6 +31,28 @@ const playerStats = [
 ];
 
 const colors = ["#76d06b", "#69c9d1", "#e2b84e", "#e46f64", "#9da3ad"];
+const typeColors = {
+  normal: "#a8a77a",
+  fire: "#ee8130",
+  water: "#6390f0",
+  electric: "#f7d02c",
+  grass: "#7ac74c",
+  ice: "#96d9d6",
+  fighting: "#c22e28",
+  poison: "#a33ea1",
+  ground: "#e2bf65",
+  flying: "#a98ff3",
+  psychic: "#f95587",
+  bug: "#a6b91a",
+  rock: "#b6a136",
+  ghost: "#735797",
+  dragon: "#6f35fc",
+  dark: "#705746",
+  steel: "#b7b7ce",
+  fairy: "#d685ad",
+  stellar: "#69c9d1",
+  unknown: "#9da3ad",
+};
 let currentMetric = "blocksMined";
 let currentPlayer = "";
 let summary;
@@ -63,6 +85,7 @@ const titleCase = (value = "") =>
 
 const prettyMove = (value = "") => titleCase(value.replace(/([a-z])([A-Z])/g, "$1 $2"));
 const pokemonIcon = (mon) => iconManifest[mon.species] || "assets/cobblemon/caught_icon.png";
+const typeColor = (type) => typeColors[type] || typeColors.unknown;
 
 const renderAggregate = () => {
   document.querySelector("#player-count").textContent = summary.players.length;
@@ -297,6 +320,94 @@ const renderStorageFeatures = (player) => {
     .join("");
 };
 
+const donutSegments = (typeCounts = {}) => {
+  const entries = Object.entries(typeCounts).filter(([, count]) => count > 0);
+  const total = entries.reduce((sum, [, count]) => sum + count, 0);
+  let offset = 0;
+
+  return entries
+    .map(([type, count]) => {
+      const dash = total ? (count / total) * 100 : 0;
+      const circle = `
+        <circle
+          class="donut-segment"
+          cx="21"
+          cy="21"
+          r="15.9155"
+          pathLength="100"
+          fill="none"
+          stroke="${typeColor(type)}"
+          stroke-width="7"
+          stroke-dasharray="${dash} ${100 - dash}"
+          stroke-dashoffset="${-offset}"
+          transform="rotate(-90 21 21)"
+        />
+      `;
+      offset += dash;
+      return circle;
+    })
+    .join("");
+};
+
+const renderTypeInfographics = () => {
+  document.querySelector("#type-card-grid").innerHTML = storageSummary.players
+    .map((player) => {
+      const topTypes = player.topTypes || [];
+      const bestIv = player.bestIvs?.[0];
+      const typeEntries = player.typeSummary?.typeEntries || 0;
+      const fallbackCount = player.typeSummary?.fallbackPokemon || 0;
+
+      return `
+        <article class="type-card">
+          <div class="type-card-head">
+            <div>
+              <h3>${player.name}</h3>
+              <p>${player.counts.pc} PC &middot; ${player.counts.party} party</p>
+            </div>
+            <span>${player.counts.shiny} shiny</span>
+          </div>
+          <div class="donut-layout">
+            <div class="donut-wrap" aria-label="${player.name} type distribution">
+              <svg class="donut-chart" viewBox="0 0 42 42" role="img">
+                <circle cx="21" cy="21" r="15.9155" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="7" />
+                ${donutSegments(player.typeCounts)}
+              </svg>
+              <div class="donut-center">
+                <strong>${player.counts.total}</strong>
+                <span>Pokemon</span>
+              </div>
+            </div>
+            <div class="type-legend">
+              ${topTypes
+                .map(
+                  (entry) => `
+                    <div>
+                      <i style="background:${typeColor(entry.type)}"></i>
+                      <span>${titleCase(entry.type)}</span>
+                      <strong>${entry.count}</strong>
+                    </div>
+                  `,
+                )
+                .join("")}
+            </div>
+          </div>
+          <div class="type-card-stats">
+            <div><span>Type entries</span><strong>${typeEntries}</strong></div>
+            <div><span>Level 100s</span><strong>${player.counts.level100}</strong></div>
+            <div><span>Rare bucket</span><strong>${player.counts.rareBucket}</strong></div>
+            <div><span>Best IV</span><strong>${bestIv ? `${titleCase(bestIv.species)} ${bestIv.ivTotal}/186` : "None"}</strong></div>
+          </div>
+          ${
+            fallbackCount
+              ? `<p class="type-note">${fallbackCount} custom/form species use tera type fallback.</p>`
+              : `<p class="type-note">All species resolved to normal type data.</p>`
+          }
+        </article>
+      `;
+    })
+    .join("");
+};
+
 const renderStorage = () => {
   const player = currentStoragePlayer();
   storagePlayer = player.uuid;
@@ -359,5 +470,6 @@ Promise.all([
   renderStorageTotals();
   renderStoragePlayerSelect();
   renderStorageControls();
+  renderTypeInfographics();
   renderStorage();
 });
