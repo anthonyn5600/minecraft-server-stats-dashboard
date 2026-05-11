@@ -483,13 +483,19 @@ input[type="search"]::placeholder {
 
 .type-card-grid {
   display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
-  gap: 12px;
+  grid-template-columns: 1fr;
 }
 
 .type-card {
+  display: grid;
+  grid-template-columns: minmax(180px, 0.8fr) minmax(360px, 1.35fr) minmax(280px, 1fr);
+  grid-template-areas:
+    "head chart stats"
+    "note chart stats";
+  gap: 16px;
+  align-items: center;
   min-width: 0;
-  padding: 14px;
+  padding: 18px;
   border: 1px solid var(--line);
   border-radius: 8px;
   background:
@@ -498,17 +504,17 @@ input[type="search"]::placeholder {
 }
 
 .type-card-head {
+  grid-area: head;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
   gap: 10px;
-  min-height: 48px;
 }
 
 .type-card h3 {
   margin: 0;
   overflow-wrap: anywhere;
-  font-size: 1rem;
+  font-size: 1.25rem;
 }
 
 .type-card-head p,
@@ -529,16 +535,16 @@ input[type="search"]::placeholder {
 }
 
 .donut-layout {
+  grid-area: chart;
   display: grid;
-  grid-template-columns: 112px minmax(0, 1fr);
-  gap: 12px;
+  grid-template-columns: 150px minmax(0, 1fr);
+  gap: 18px;
   align-items: center;
-  margin: 12px 0;
 }
 
 .donut-wrap {
   position: relative;
-  width: 112px;
+  width: 150px;
   aspect-ratio: 1;
 }
 
@@ -549,12 +555,13 @@ input[type="search"]::placeholder {
 }
 
 .donut-segment {
+  cursor: help;
   stroke-linecap: butt;
 }
 
 .donut-center {
   position: absolute;
-  inset: 28px;
+  inset: 38px;
   display: grid;
   place-items: center;
   align-content: center;
@@ -565,7 +572,7 @@ input[type="search"]::placeholder {
 
 .donut-center strong {
   color: var(--text);
-  font-size: 1.05rem;
+  font-size: 1.35rem;
   line-height: 1;
 }
 
@@ -585,11 +592,11 @@ input[type="search"]::placeholder {
 
 .type-legend div {
   display: grid;
-  grid-template-columns: 10px minmax(0, 1fr) auto;
+  grid-template-columns: 10px minmax(80px, 1fr) auto;
   align-items: center;
   gap: 6px;
   color: var(--muted);
-  font-size: 0.78rem;
+  font-size: 0.92rem;
 }
 
 .type-legend i {
@@ -599,9 +606,7 @@ input[type="search"]::placeholder {
 }
 
 .type-legend span {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  overflow-wrap: anywhere;
 }
 
 .type-legend strong {
@@ -609,7 +614,14 @@ input[type="search"]::placeholder {
   font-variant-numeric: tabular-nums;
 }
 
+.type-legend small {
+  color: var(--muted);
+  font-size: 0.72em;
+  font-weight: 700;
+}
+
 .type-card-stats {
+  grid-area: stats;
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 8px;
@@ -640,8 +652,9 @@ input[type="search"]::placeholder {
 }
 
 .type-note {
+  grid-area: note;
   min-height: 34px;
-  margin-top: 10px;
+  margin-top: 0;
   line-height: 1.35;
 }
 
@@ -828,9 +841,17 @@ input[type="search"]::placeholder {
 
   .metric-grid,
   .storage-feature-grid,
-  .pokemon-grid,
-  .type-card-grid {
+  .pokemon-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .type-card {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-areas:
+      "head"
+      "chart"
+      "stats"
+      "note";
   }
 
   .toolbar,
@@ -878,8 +899,7 @@ input[type="search"]::placeholder {
   .metric-grid,
   .player-stats,
   .storage-feature-grid,
-  .pokemon-grid,
-  .type-card-grid {
+  .pokemon-grid {
     grid-template-columns: 1fr;
   }
 
@@ -903,11 +923,20 @@ input[type="search"]::placeholder {
   }
 
   .donut-layout {
-    grid-template-columns: 104px minmax(0, 1fr);
+    grid-template-columns: 118px minmax(0, 1fr);
+    gap: 12px;
   }
 
   .donut-wrap {
-    width: 104px;
+    width: 118px;
+  }
+
+  .donut-center {
+    inset: 30px;
+  }
+
+  .type-card {
+    padding: 14px;
   }
 
   .pokemon-scroll-window {

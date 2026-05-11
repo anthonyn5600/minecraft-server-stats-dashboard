@@ -328,6 +328,7 @@ const donutSegments = (typeCounts = {}) => {
   return entries
     .map(([type, count]) => {
       const dash = total ? (count / total) * 100 : 0;
+      const percentage = total ? ((count / total) * 100).toFixed(1) : "0.0";
       const circle = `
         <circle
           class="donut-segment"
@@ -341,7 +342,9 @@ const donutSegments = (typeCounts = {}) => {
           stroke-dasharray="${dash} ${100 - dash}"
           stroke-dashoffset="${-offset}"
           transform="rotate(-90 21 21)"
-        />
+        >
+          <title>${titleCase(type)}: ${count} (${percentage}%)</title>
+        </circle>
       `;
       offset += dash;
       return circle;
@@ -350,62 +353,61 @@ const donutSegments = (typeCounts = {}) => {
 };
 
 const renderTypeInfographics = () => {
-  document.querySelector("#type-card-grid").innerHTML = storageSummary.players
-    .map((player) => {
-      const topTypes = player.topTypes || [];
-      const bestIv = player.bestIvs?.[0];
-      const typeEntries = player.typeSummary?.typeEntries || 0;
-      const fallbackCount = player.typeSummary?.fallbackPokemon || 0;
+  const player = currentStoragePlayer();
+  const topTypes = player.topTypes || [];
+  const bestIv = player.bestIvs?.[0];
+  const typeEntries = player.typeSummary?.typeEntries || 0;
+  const fallbackCount = player.typeSummary?.fallbackPokemon || 0;
 
-      return `
-        <article class="type-card">
-          <div class="type-card-head">
-            <div>
-              <h3>${player.name}</h3>
-              <p>${player.counts.pc} PC &middot; ${player.counts.party} party</p>
-            </div>
-            <span>${player.counts.shiny} shiny</span>
+  document.querySelector("#type-card-grid").innerHTML = `
+    <article class="type-card">
+      <div class="type-card-head">
+        <div>
+          <h3>${player.name}</h3>
+          <p>${player.counts.pc} PC &middot; ${player.counts.party} party</p>
+        </div>
+        <span>${player.counts.shiny} shiny</span>
+      </div>
+      <div class="donut-layout">
+        <div class="donut-wrap" aria-label="${player.name} type distribution">
+          <svg class="donut-chart" viewBox="0 0 42 42" role="img">
+            <title>${player.name} species type distribution</title>
+            <circle cx="21" cy="21" r="15.9155" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="7" />
+            ${donutSegments(player.typeCounts)}
+          </svg>
+          <div class="donut-center">
+            <strong>${player.counts.total}</strong>
+            <span>Pokemon</span>
           </div>
-          <div class="donut-layout">
-            <div class="donut-wrap" aria-label="${player.name} type distribution">
-              <svg class="donut-chart" viewBox="0 0 42 42" role="img">
-                <circle cx="21" cy="21" r="15.9155" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="7" />
-                ${donutSegments(player.typeCounts)}
-              </svg>
-              <div class="donut-center">
-                <strong>${player.counts.total}</strong>
-                <span>Pokemon</span>
-              </div>
-            </div>
-            <div class="type-legend">
-              ${topTypes
-                .map(
-                  (entry) => `
-                    <div>
-                      <i style="background:${typeColor(entry.type)}"></i>
-                      <span>${titleCase(entry.type)}</span>
-                      <strong>${entry.count}</strong>
-                    </div>
-                  `,
-                )
-                .join("")}
-            </div>
-          </div>
-          <div class="type-card-stats">
-            <div><span>Type entries</span><strong>${typeEntries}</strong></div>
-            <div><span>Level 100s</span><strong>${player.counts.level100}</strong></div>
-            <div><span>Rare bucket</span><strong>${player.counts.rareBucket}</strong></div>
-            <div><span>Best IV</span><strong>${bestIv ? `${titleCase(bestIv.species)} ${bestIv.ivTotal}/186` : "None"}</strong></div>
-          </div>
-          ${
-            fallbackCount
-              ? `<p class="type-note">${fallbackCount} custom/form species use tera type fallback.</p>`
-              : `<p class="type-note">All species resolved to normal type data.</p>`
-          }
-        </article>
-      `;
-    })
-    .join("");
+        </div>
+        <div class="type-legend">
+          ${topTypes
+            .map((entry) => {
+              const percentage = typeEntries ? ((entry.count / typeEntries) * 100).toFixed(1) : "0.0";
+              return `
+                <div title="${titleCase(entry.type)}: ${entry.count} (${percentage}%)">
+                  <i style="background:${typeColor(entry.type)}"></i>
+                  <span>${titleCase(entry.type)}</span>
+                  <strong>${entry.count} <small>${percentage}%</small></strong>
+                </div>
+              `;
+            })
+            .join("")}
+        </div>
+      </div>
+      <div class="type-card-stats">
+        <div><span>Type entries</span><strong>${typeEntries}</strong></div>
+        <div><span>Level 100s</span><strong>${player.counts.level100}</strong></div>
+        <div><span>Rare bucket</span><strong>${player.counts.rareBucket}</strong></div>
+        <div><span>Best IV</span><strong>${bestIv ? `${titleCase(bestIv.species)} ${bestIv.ivTotal}/186` : "None"}</strong></div>
+      </div>
+      ${
+        fallbackCount
+          ? `<p class="type-note">${fallbackCount} custom/form species use tera type fallback.</p>`
+          : `<p class="type-note">All species resolved to normal type data.</p>`
+      }
+    </article>
+  `;
 };
 
 const renderStorage = () => {
@@ -413,6 +415,7 @@ const renderStorage = () => {
   storagePlayer = player.uuid;
   document.querySelector("#storage-title").textContent = `${player.name}'s Pokemon collection`;
   renderStorageFeatures(player);
+  renderTypeInfographics();
 
   const collection = storageCollection(player);
   document.querySelector("#storage-count").textContent = `Showing ${collection.length.toLocaleString()} of ${player.counts.total.toLocaleString()} Pokemon`;
@@ -470,6 +473,5 @@ Promise.all([
   renderStorageTotals();
   renderStoragePlayerSelect();
   renderStorageControls();
-  renderTypeInfographics();
   renderStorage();
 });
